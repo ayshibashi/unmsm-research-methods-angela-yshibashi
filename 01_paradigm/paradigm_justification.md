@@ -12,7 +12,7 @@ Develop a risk governance framework,  model or artifact for AI-based compliance 
 
 ## Justification
 
-*the question is Can we build X to solve Y *
+*the question is Can we build X to solve Y, through build, evaluate and iterative  *
 
 ## Key Assumptions
 
@@ -22,5 +22,6 @@ Develop a risk governance framework,  model or artifact for AI-based compliance 
 - The path forward requires more than just better technology; it requires better governance. Only through comprehensive compliance framework can we harness the power of AI to build a robust reliable banking system and central bank, because that is not only more efficient but also demonstrably fair and accountable
 
 ## References
+[Leveraging artiicial intelligence for enhace regulation in emerging economies.pdf](https://github.com/user-attachments/files/29157051/Leveraging.artiicial.intelligence.for.enhace.regulation.in.emerging.economies.pdf)
 
 *[Key references supporting your paradigm choice]*
