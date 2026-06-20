@@ -22,7 +22,7 @@ Evaluate research methods against your research questions and paradigm.
 
 ## Rationale for Selected Method(s)
 
-*after found some similar source of data in real life problem in Brazilian banking, think it can help at work to solve specific case and probably adjust and linit the approach*
+*after found some similar source of data in real life problem in Brazilian banking, think it can help at work to solve specific case and probably adjust and limit approach to risk in general not only AI to review internal reguations*
 
 ## Constraints & Limitations
 
@@ -34,5 +34,7 @@ Evaluate research methods against your research questions and paradigm.
 https://huggingface.co/models?pipeline_tag=text-classification&language=es&sort=trending&search=beto
 
 *Finally plan to use a particular DB for internal and external normative*
+*For externa regulation I can use a Public DB or ask for acsess to download specific regulation*
 
+https://spij.minjus.gob.pe/spij-ext-web/#/detallenorma/H1337320
 
