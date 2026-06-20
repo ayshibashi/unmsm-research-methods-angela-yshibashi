@@ -16,9 +16,9 @@ Evaluate research methods against your research questions and paradigm.
 
 | Method | RQ1 Fit | RQ2 Fit | RQ3 Fit | Feasibility | Cost | Selected? |
 |--------|---------|---------|---------|-------------|------|----------|
-| *Design sci* | ? | ? | ? | ? | ? | ? |
-| *Case study* | ? | ? | ? | ? | ? | ? |
-| *Mixed method* | ? | ? | ? | ? | ? | ? |
+| *Design science* | 3/5 |3/5 | 3/5 | 3/5 | 3/5| ? |
+| *Case study* | 3/5 | 3/5 | 3/5 | 3/5 |3/5 | ? |
+| *Mixed method* | 5/5 | 3/5 | 5/5 | 3/5 | 3/5 | ? |
 
 ## Rationale for Selected Method(s)
 
