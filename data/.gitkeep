@@ -1,0 +1,6 @@
+# Data Directory
+
+Data files tracked via DVC should be placed here.
+See the main README for DVC setup instructions.
+
+This `.gitkeep` file ensures the directory is tracked in Git.

@@ -1,0 +1,4 @@
+# MLflow Tracking Directory
+
+MLflow tracking outputs will be stored here.
+This `.gitkeep` file ensures the directory is tracked in Git.
