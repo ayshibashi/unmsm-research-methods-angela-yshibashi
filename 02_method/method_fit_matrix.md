@@ -8,17 +8,17 @@ Evaluate research methods against your research questions and paradigm.
 
 ## Research Questions
 
-1. *[RQ1]*
-2. *[RQ2]*
-3. *[RQ3]*
-
+1. *Does this method match my paradigm´s view of what couns as knowledge?*
+2. *Can I actually get the data this method needs in 3 years?*
+3. *What kind of new knowledge does this method produce?*
+   
 ## Method Fit Analysis
 
 | Method | RQ1 Fit | RQ2 Fit | RQ3 Fit | Feasibility | Cost | Selected? |
 |--------|---------|---------|---------|-------------|------|----------|
-| *Method A* | ? | ? | ? | ? | ? | ? |
-| *Method B* | ? | ? | ? | ? | ? | ? |
-| *Method C* | ? | ? | ? | ? | ? | ? |
+| *Design sci* | ? | ? | ? | ? | ? | ? |
+| *Case study* | ? | ? | ? | ? | ? | ? |
+| *Mixed method* | ? | ? | ? | ? | ? | ? |
 
 ## Rationale for Selected Method(s)
 
