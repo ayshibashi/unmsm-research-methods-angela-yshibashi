@@ -29,7 +29,6 @@ Evaluate research methods against your research questions and paradigm.
 *Found in Kaggle a BBRC a Brazilian Banking Regularion Corpora that uses a data base with BERTimbau for Portuguese*
 [BBRC Brazilian Banking Regulation Corpora.pdf](https://github.com/user-attachments/files/29165782/BBRC.Brazilian.Banking.Regulation.Corpora.pdf)
 
-
 *Found suggeted BETO the equivalent BERTimbau develop at University of Chile*
 
 https://huggingface.co/models?pipeline_tag=text-classification&language=es&sort=trending&search=beto
