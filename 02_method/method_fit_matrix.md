@@ -34,7 +34,7 @@ Evaluate research methods against your research questions and paradigm.
 https://huggingface.co/models?pipeline_tag=text-classification&language=es&sort=trending&search=beto
 
 *Finally plan to use a particular DB for internal and external normative*
-*For externa regulation I can use a Public DB or ask for acsess to download specific regulation*
+*For externa regulation planning to use a Public DB or ask for acsess to download specific regulation*
 
 https://spij.minjus.gob.pe/spij-ext-web/#/detallenorma/H1337320
 
