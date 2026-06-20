@@ -24,4 +24,5 @@ Develop a risk governance framework,  model or artifact for AI-based compliance 
 ## References
 [Leveraging artiicial intelligence for enhace regulation in emerging economies.pdf](https://github.com/user-attachments/files/29157051/Leveraging.artiicial.intelligence.for.enhace.regulation.in.emerging.economies.pdf)
 
+[Algorithmic governance in banking.pdf](https://github.com/user-attachments/files/29157084/Algorithmic.governance.in.banking.pdf)
 *[Key references supporting your paradigm choice]*
