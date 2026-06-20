@@ -22,15 +22,18 @@ Evaluate research methods against your research questions and paradigm.
 
 ## Rationale for Selected Method(s)
 
-*after found some similar source of data in real life problem in Brazilian banking, think it can help at work to solve specific case*
+*after found some similar source of data in real life problem in Brazilian banking, think it can help at work to solve specific case and probably adjust and linit the approach*
 
 ## Constraints & Limitations
 
-*Found in Kaggle a BBRC a Brazilian Banking Regularion Corpora that uses a data bas with BERTimbau for Portuguese*
+*Found in Kaggle a BBRC a Brazilian Banking Regularion Corpora that uses a data base with BERTimbau for Portuguese*
 [BBRC Brazilian Banking Regulation Corpora.pdf](https://github.com/user-attachments/files/29165782/BBRC.Brazilian.Banking.Regulation.Corpora.pdf)
 
 
 *Found suggeted BETO the equivalent BERTimbau develop at University of Chile*
 
 https://huggingface.co/models?pipeline_tag=text-classification&language=es&sort=trending&search=beto
+
+*Finally plan to use a particular DB for internal and external normative*
+
 
