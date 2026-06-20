@@ -9,8 +9,8 @@ Evaluate research methods against your research questions and paradigm.
 ## Research Questions
 
 1. *Does this method match my paradigm´s view of what couns as knowledge?*
-2. *Can I actually get the data this method needs in 3 years?*
-3. *What kind of new knowledge does this method produce?*
+2. *Can I actually get the data this method needs in 3 years? 3 year doctoral timeline + budget*
+3. *What kind of new knowledge does this method produce? framework + deployable tool*
    
 ## Method Fit Analysis
 
