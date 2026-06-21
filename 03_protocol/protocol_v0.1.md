@@ -17,12 +17,12 @@ The sources warn that this task is subjective but vital: a misclassification cou
 
 ## Participants/Data
 
-*To clasif the data we need expert experience, and the data is public in regulators web and peruvian national newspaper and in the SPIJ specialist DB *
+To clasif the data we need expert experience, and we will gather the public data, regulations from regulators web and official peruvian newspaper, in the SPIJ specialize legal DB (we have to focus on banking and AI) 
 
 ## Procedure
 
-*Implementing BETO (The AI Engine)
-Although the sources use BERTimbau for Portuguese, the process for BETO in Spanish would be identical:
+Implementing BETO (The AI Engine)
+Although the sources use BERTimbau for Portuguese, the process for BETO in Spanish would be identical (should be to be tested):
 Technical Superiority: Experiments show that BERT-type models are superior when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation
 
 Recommended Configuration: According to the benchmarks, we should configure your model with a maximum length of 512 tokens, a batch size of 20, and use the AdamW optimizer with a learning rate of 1e-5 and an epsilon of 1e-8
@@ -31,8 +31,8 @@ Preprocessing: Unlike traditional models, you should not remove stop words or ov
 
 ## Data Collection
 
-*In Peru: You would need to automate the download of regulations from entities such as the SBS (Superintendency of Banking, Insurance, and AFP), the BCRP (Central Reserve Bank of Peru), the SMV (Superintendency of the Securities Market), and the official newspaper El Peruano.
-Using Drive: While we can use Google Drive as an initial repository, the study suggests that for training and production, we will need to process these files to extract the plain text (the text column), its length, and the regulatory identifier*
+In Peru: You would need to automate the download of regulations from entities such as the SBS (Superintendency of Banking, Insurance, and AFP), the BCRP (Central Reserve Bank of Peru), the SMV (Superintendency of the Securities Market), and the official newspaper El Peruano.
+Using Drive: While we can use Google Drive as an initial repository, the study suggests that for training and production, we will need to process these files to extract the plain text (the text column), its length, and the regulatory identifier
 
 ## Analysis Plan
 
@@ -44,7 +44,7 @@ A key detail from the study is that they did not use AI alone. The system operat
 
 Challenges to Consider
 Data Imbalance: Most Peruvian regulations will likely be irrelevant for a given department. The study suggests using undersampling techniques so the model learns to better distinguish the relevant class
-.
+
 Infrastructure: The original dataset occupies 1.7 GB in CSV format
 . If we plan to use Drive, we have to ensure have an efficient way to read those files (for example, using Python scripts) to feed the data into BETO.
 
