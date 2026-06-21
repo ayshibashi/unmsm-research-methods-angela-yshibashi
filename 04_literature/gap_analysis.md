@@ -4,7 +4,7 @@
 
 ## Overview
 
-Analysis of gaps in existing literature.
+There is no published researches from Peruvian casas in existing literature. We found related articles from other contries studies, the only closed one is the BBRC The Brazilian Banking Regultaion Corpora in Kaggle as a Dataset to share.
 
 ## Identified Gaps
 
