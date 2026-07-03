@@ -51,9 +51,17 @@ Technical component: AI/NLP classification or regulatory intelligence prototype.
 | *Mixed method* | 5/5 | 5/5 | 3/5 | 3/5 | 5/5 | 21/25 |
 
 ## Rationale for Selected Method(s)
-How can AI support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian financial sector?
+How can AI support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian banking sector?
 
-Develop a risk governance framework/model/artifact for AI-based compliance systems in the Peruvian financial sector, focused on regulatory risk, compliance regulation, AI regulation, and personal information protection. That wording matches Design Science because the main contribution is to build and evaluate an artifact.
+The study is grounded in the Design Science Research paradigm because its central contribution is the development and evaluation of an artifact: a regulatory risk and AI compliance governance framework for the Peruvian banking sector. The artifact integrates regulatory risk management, compliance obligations, emerging AI regulations, and personal information protection requirements.
 
 ## Constraints & Limitations
 
+Unlike the Brazilian study, whose objective was primarily the classification of banking regulations for different departments, your proposed study would focus on a strategic governance problem:
+
+How can AI support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian financial sector? 
+
+The success depends on the Legal experts team to make the clasification which is the more critical part.
+Open public data.
+Model alternayive Legal-Bert-Spanish
+Management new regulations 
