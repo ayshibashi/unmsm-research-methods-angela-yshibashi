@@ -9,15 +9,69 @@
 
 ## Research Design
 
-*The success of the Brazilian BBRC was based on expert annotation
 
-For BETO to learn, we will need legal or compliance specialists in Peru to tag an initial set of documents as "Relevant" or "Irrelevant" for specific departments (e.g., Treasury, Risks, Audit)
+	*Regulators
+      ↓
+	*Document Collection
+      ↓
+	*NLP Preprocessing
+      ↓
+	*Vector Store
+      ↓
+	*AI Classification
+      ↓
+	*Regulatory Obligation Extraction
+      ↓
+	*AI Governance Assessment
+      ↓
+	*Cybersecurity Control Mapping
+      ↓
+	*Risk Dashboard
+      ↓
+	*Owner Assignment
 
-The sources warn that this task is subjective but vital: a misclassification could lead to expensive fines, restrictions, or sanctions for the bank*
+
+	## AI Models to Evaluate
+
+	Traditional
+
+	SVM
+	XGBoost
+	Random Forest
+
+	Language Models
+
+	FinBERT
+	LegalBERT
+	XLM-RoBERTa
+
+	Generative AI
+
+	GPT-5 class models
+	Llama 4
+	Mistral
+	Phi
+
+
+	## Explainability Layer (XAI)
+	Given your interest in AI governance for financial institutions, this should be a major contribution.
+	Methods:
+
+	SHAP
+	LIME
+	Attention visualization
+	Counterfactual explanations
+
+	Outputs:
+
+	Why regulation was classified as relevant
+	Key regulatory clauses
+	Confidence level
+	Compliance impact rationale
 
 ## Participants/Data
 
-To clasif the data we need expert experience, and we will gather the public data, regulations from regulators web and official peruvian newspaper, in the SPIJ specialize legal DB (we have to focus on banking and AI) 
+To clasif the data we need expert experience, and we will gather the public data, regulations from regulators web SBS BCRP SMV and official peruvian newspaper, in the SPIJ specialize legal DB (we have to focus on banking and AI) 
 
 ## Procedure
 
