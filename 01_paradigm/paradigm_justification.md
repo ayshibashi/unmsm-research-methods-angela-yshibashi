@@ -11,7 +11,7 @@ Based on the Brazilian experience described in BBRC Brazilian Banking Regulation
 
 Design science
 
-Develop and validate a national corpus of Peruvian banking regulations capable of supporting AI-powered regulatory intelligence and regulatory risk management.
+Develop and validate a national corpus of Peruvian banking regulations capable of supporting AI-powered regulatory intelligence and regulatory risk management to prevent mainly regulatory risk.
 
 ## Justification
 
