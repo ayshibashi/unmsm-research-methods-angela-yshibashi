@@ -4,7 +4,7 @@
 
 ## Overview
 
-Inspired by the Brazilian BBRC Framework but adapted to the Peruvian regulatory ecosystem, AI governance requirements, cybersecurity regulations, and the emerging regulatory landscape affecting financial institutions.
+Design an adapted framework to the Peruvian regulatory ecosystem, AI governance requirements, cybersecurity regulations, and the emerging regulatory landscape affecting financial institutions.
 Based on the Brazilian experience described in BBRC Brazilian Banking Regulation Corpora, the key innovation is not merely building an NLP dataset but establishing a continuous Regulatory Radar capable of detecting, classifying, prioritizing, and assigning regulatory obligations to specific organizational units.
 
 ## Paradigm Selected
