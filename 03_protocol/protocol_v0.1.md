@@ -70,12 +70,7 @@ BBRC used expert annotation by business specialists. Our Peruvian study can impr
 	XGBoost
 	Random Forest
 
-	Language Models
-
-	FinBERT
-	LegalBERT
-	XLM-RoBERTa
-
+	
 	Generative AI
 
 	GPT-5 class models
@@ -106,13 +101,13 @@ To clasif the data we need expert experience, and we will gather the public data
 
 ## Procedure
 
-Implementing BETO (The AI Engine)
-Although the sources use BERTimbau for Portuguese, the process for BETO in Spanish would be identical (should be to be tested):
-Technical Superiority: Experiments show that BERT-type models are superior when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation
+Implementing Ai Generative (The AI Engine)
 
-Recommended Configuration: According to the benchmarks, we should configure your model with a maximum length of 512 tokens, a batch size of 20, and use the AdamW optimizer with a learning rate of 1e-5 and an epsilon of 1e-8
+We have to look for superior engines when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation
 
-Preprocessing: Unlike traditional models, you should not remove stop words or over-simplify the text when using BETO, in order to maintain the richness of the legal language*
+Recommended Configuration: According to the benchmarks, we should configure our model with a maximum length of 512 tokens, a batch size of 20, and use the AdamW optimizer with a learning rate of 1e-5 and an epsilon of 1e-8
+
+Preprocessing: Unlike traditional models, you should not remove stop words or over-simplify the text when using engine, in order to maintain the richness of the legal language*
 
 ## Data Collection
 
@@ -124,7 +119,7 @@ Using Drive: While we can use Google Drive as an initial repository, the study s
 *A Hybrid Approach (AI + Rules)
 A key detail from the study is that they did not use AI alone. The system operates with a hybrid pipeline:
 
-1. AI Prediction (BETO): Classifies relevance based on context
+1. AI Prediction (engine): Classifies relevance based on context
 2. Deterministic Rules (Regex): Searches for specific keywords or filters by desired or undesired regulators and document types. This is especially useful at the beginning of the project when we have fewer annotated samples to train the model.
 
 Challenges to Consider
@@ -133,7 +128,7 @@ Data Imbalance: Most Peruvian regulations will likely be irrelevant for a given 
 Infrastructure: The original dataset occupies 1.7 GB in CSV format
 . If we plan to use Drive, we have to ensure have an efficient way to read those files (for example, using Python scripts) to feed the data into BETO.
 
-The model BETO is not mentioned in the sources (which focus on Portuguese models like BERTimbau and BERTabaporu), so its specific performance in the Peruvian legal domain is something we should validate independently. However, the underlying BERT architecture has proven to be highly effective for these tasks according to the results presented in the studies*
+Insead of using Machine learning for specific performance in the Peruvian legal domain we should validate generative engines to prove which is highly effective for these tasks according to the results presented in prevuios studies like the Brazilian BBR*
 
 ## Ethical Considerations
 
