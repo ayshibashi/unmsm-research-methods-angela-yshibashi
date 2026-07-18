@@ -31,7 +31,7 @@
 	*Owner Assignment
 
 ## Annotation Methodology
-BBRC used expert annotation by business specialists. Our Peruvian study can improve this with a richer schema.
+The previous project BBRC used expert annotation by business specialists. Our Peruvian study can improve this with a richer schema.
 
 	Level 1 	Relevant / Not Relevant
 	(Binary classification)
@@ -128,7 +128,7 @@ Data Imbalance: Most Peruvian regulations will likely be irrelevant for a given 
 Infrastructure: The original dataset occupies 1.7 GB in CSV format
 . If we plan to use Drive, we have to ensure have an efficient way to read those files (for example, using Python scripts) to feed the data into BETO.
 
-Insead of using Machine learning for specific performance in the Peruvian legal domain we should validate generative engines to prove which is highly effective for these tasks according to the results presented in prevuios studies like the Brazilian BBR*
+Insead of using Machine learning for specific performance in the Peruvian legal domain we should validate generative engines to prove which is highly effective for these tasks according to the results presented in prevuios studies like the Brazilian BBRC*
 
 ## Ethical Considerations
 
