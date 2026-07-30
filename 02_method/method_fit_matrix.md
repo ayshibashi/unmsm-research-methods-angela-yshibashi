@@ -57,11 +57,7 @@ The study is grounded in the Design Science Research paradigm because its centra
 
 ## Constraints & Limitations
 
-Unlike the Brazilian study, whose objective was primarily the classification of banking regulations for different departments, our proposed study would focus on a strategic governance problem:
-
 How can AI support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian banking sector
-
-The success depends on the Legal experts team or expert people on risk assessments to make the clasification which is the more critical part.
 
 Open public data.
 
