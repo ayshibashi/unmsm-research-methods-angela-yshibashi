@@ -12,7 +12,7 @@ Methodological strategy: Mixed methods.
 
 Evaluation setting: Embedded case study.
 
-Technical component: AI/NLP classification or regulatory intelligence prototype.
+Technical component
 
 ## Evauaton methods
 
