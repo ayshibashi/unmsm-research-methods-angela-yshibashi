@@ -31,36 +31,8 @@
 	*Owner Assignment
 
 ## Annotation Methodology
-The previous project BBRC used expert annotation by business specialists. Our Peruvian study can improve this with a richer schema.
+This system cross-references all regulatory authorities and identifies regulatory gaps and upcoming compliance deadlines for banks.
 
-	Level 1 	Relevant / Not Relevant
-	(Binary classification)
-
-	Level 2 	Impact Level
-	Low
-	Medium
-	High
-	Critical
-
-	Level 3		Domain
-	Risk
-	Cybersecurity
-	AI
-	Data Protection
-	Continuity
-	AML
-
-	Level 4		Regulatory Obligation Type
-		Reporting
-	Governance
-	Controls
-	Monitoring
-	Audit
-	Security
-	Documentation
-
-	Level 5		AI Risk Classification
-	Using NIST AI RMF and EU AI Act categories.
 	
 ## AI Models to Evaluate
 
