@@ -17,7 +17,7 @@ Develop a continuous regulatory standards radar to detect, classify, and priorit
 
 the question is Can we build X to solve Y, through build, evaluate and iterative 
 
-Peruvian banks face growing regulatory complexity from multiple sources:
+The Peruvian banking sector faces numerous regulatory constraints; our strategy focuses on just four key institutions to initiate this study.
 
 Superintendencia de Banca, Seguros y AFP (SBS)
 Banco Central de Reserva del Perú (BCRP)
@@ -36,11 +36,11 @@ Cybersecurity compliance deficiencies
 
 ## Key Assumptions
 
-- Design as an artifact or method, implementating a model, if could an artifact to comply AI Regulatory Compliance Framework in the local Peruvian banking System, including Central banking best practices and evolving legal internal and external landscape and propose the 7 foundational guidelines of Hevner´s 7 guidelines
+
+- Design a tool that can cross-reference all regulatory authorities and identify regulatory gaps and upcoming compliance deadlines for banks. and propose the 7 foundational guidelines of Hevner´s guidelines
 - Problem relevance The objective of this research is to develop technology-based solutions to address relevant, unsolved and important business problem that is constantly evolving and being criticized through worldwide articles.
-- Research evaluation - Demonstrate utility, quality and efficacy of the model (or design artifact) for AI-based regulatory compliance framework.
-- The path forward requires more than just better technology; it requires better governance. Only through comprehensive compliance framework can we harness the power of AI to build a robust reliable banking system and central bank, because that is not only more efficient but also demonstrably fair and accountable
-  
+- Research evaluation - Demonstrate utility, quality and efficacy of the model (or design artifact) for regulatory compliance framework.
+
 
 ## References
 
