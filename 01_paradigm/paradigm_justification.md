@@ -19,20 +19,20 @@ the question is Can we build X to solve Y, through build, evaluate and iterative
 
 The Peruvian banking sector faces numerous regulatory constraints; our strategy focuses on just four key institutions to initiate this study.
 
-Superintendencia de Banca, Seguros y AFP (SBS)
-Banco Central de Reserva del Perú (BCRP)
-Autoridad Nacional de Protección de Datos Personales (ANPDP)
-PCM Secretaría de Gobierno y Transformación Digital
+- Superintendencia de Banca, Seguros y AFP (SBS)
+- Banco Central de Reserva del Perú (BCRP)
+- Autoridad Nacional de Protección de Datos Personales (ANPDP)
+- PCM Secretaría de Gobierno y Transformación Digital
 
 
 Currently, regulatory monitoring is largely manual and decentralized across risk, legal, compliance, security, technology, and business units.
 
 This creates:
-Regulatory compliance risk
-AI governance gaps
-Delayed regulatory response
-Inconsistent interpretation
-Cybersecurity compliance deficiencies
+- Regulatory compliance risk
+- AI governance gaps
+- Delayed regulatory response
+- Inconsistent interpretation
+- Cybersecurity compliance deficiencies
 
 ## Key Assumptions
 
