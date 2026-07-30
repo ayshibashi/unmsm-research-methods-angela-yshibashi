@@ -35,13 +35,6 @@ This system cross-references all regulatory authorities and identifies regulator
 
 	
 ## AI Models to Evaluate
-
-	Traditional
-
-	SVM
-	XGBoost
-	Random Forest
-
 	
 	Generative AI
 
@@ -51,14 +44,8 @@ This system cross-references all regulatory authorities and identifies regulator
 	Phi
 
 
-## Explainability Layer (XAI)
-	Given your interest in AI governance for financial institutions, this should be a major contribution.
-	Methods:
+## Explainability 
 
-	SHAP
-	LIME
-	Attention visualization
-	Counterfactual explanations
 
 	Outputs:
 
@@ -66,25 +53,26 @@ This system cross-references all regulatory authorities and identifies regulator
 	Key regulatory clauses
 	Confidence level
 	Compliance impact rationale
-
+	
 ## Participants/Data
 
-To clasif the data we need expert experience, and we will gather the public data, regulations from regulators web SBS BCRP SMV and official peruvian newspaper, in the SPIJ specialize legal DB (we have to focus on banking and AI) 
+We collect the Data from Public # Scraper from Normativa (SBS, BCRP, etc.)
+At first tried with 'requests` (faster), then Scraper Normativa (SBS, BCRP, etc.) — versión Google Colab
+
+If a site blocks access (as happened when testing BCRP and SBS), then decides to use **Playwright** (a real browser) as a backup, and save the database to  **Google Drive** (so it's not lost every time you log out of Colab).
 
 ## Procedure
 
 Implementing Ai Generative (The AI Engine)
 
-We have to look for superior engines when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation
+We have to look for superior engines when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation we focused on Payment Sstem to make it manageable.
 
-Recommended Configuration: According to the benchmarks, we should configure our model with a maximum length of 512 tokens, a batch size of 20, and use the AdamW optimizer with a learning rate of 1e-5 and an epsilon of 1e-8
 
-Preprocessing: Unlike traditional models, you should not remove stop words or over-simplify the text when using engine, in order to maintain the richness of the legal language*
 
 ## Data Collection
 
-In Peru: You would need to automate the download of regulations from entities such as the SBS (Superintendency of Banking, Insurance, and AFP), the BCRP (Central Reserve Bank of Peru), the SMV (Superintendency of the Securities Market), and the official newspaper El Peruano.
-Using Drive: While we can use Google Drive as an initial repository, the study suggests that for training and production, we will need to process these files to extract the plain text (the text column), its length, and the regulatory identifier
+In Peru: You would need to automate the download of regulations from entities such as the SBS, BCRP, ANPDP and PCM as presented before. 
+Using Drive: While we can use Google Drive as an initial repository, that for training and production, we will need to process these files to extract the plain text (the text column), its length, and the regulatory identifier
 
 ## Analysis Plan
 
@@ -95,16 +83,14 @@ A key detail from the study is that they did not use AI alone. The system operat
 2. Deterministic Rules (Regex): Searches for specific keywords or filters by desired or undesired regulators and document types. This is especially useful at the beginning of the project when we have fewer annotated samples to train the model.
 
 Challenges to Consider
-Data Imbalance: Most Peruvian regulations will likely be irrelevant for a given department. The study suggests using undersampling techniques so the model learns to better distinguish the relevant class
 
-Infrastructure: The original dataset occupies 1.7 GB in CSV format
-. If we plan to use Drive, we have to ensure have an efficient way to read those files (for example, using Python scripts) to feed the data into BETO.
 
-Insead of using Machine learning for specific performance in the Peruvian legal domain we should validate generative engines to prove which is highly effective for these tasks according to the results presented in prevuios studies like the Brazilian BBRC*
 
 ## Ethical Considerations
 
 *[Initial ethical concerns]*
+We tried to collect the data from SBS, BCRP, ANPDP, PCM wth requests because of speed, but the sites got blocked, antibot protection.
+Then we decide to use Playwright** (real navegator)as a  plan B with some human delays in retrieval.
 
 ## Timeline
 
