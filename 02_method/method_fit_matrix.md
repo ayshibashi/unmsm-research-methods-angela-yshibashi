@@ -19,16 +19,16 @@ Technical component
 | Paradigm           |         Fit for your study | Assessment                                                                                                                                                                                                                    |
 | ------------------ | -------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Positivist**     |                    Partial | Useful only for model testing, classification accuracy, validation metrics, or survey-based measurement. But this is not enough because our goal is not only to test hypotheses; it is to create a governance artifact.      |
-| **Interpretivist** |                       Weak | Could help understand how compliance officers, risk teams, or regulators interpret AI obligations, but it does not fit as the main paradigm because our study aims to design a framework, not only understand meanings.      |
+| **Interpretivist** |                       Weak | Could help understand how compliance officers, risk teams, or regulators interpret all obligations (AI, Personal data, regulation), but it does not fit as the main paradigm because our study aims to design a framework, not only understand meanings.      |
 | **Mixed methods**  |    Strong secondary option | Appropriate if we combine legal/document analysis, expert interviews, and quantitative model evaluation. However, mixed methods describes the methodological strategy more than the core paradigm.                           |
-| **Design Science** | **Best fit / natural fit** | This is the strongest option because ourr study seeks to build, demonstrate, and evaluate a practical artifact: a regulatory intelligence or risk governance framework for AI compliance and personal information protection. |
+| **Design Science** | **Best fit / natural fit** | This is the strongest option because our study seeks to build, demonstrate, and evaluate a practical artifact: a regulatory intelligence or risk governance framework for AI compliance and personal information protection. |
 
 ## Considering Design Science
 
 | Method                    | Use in your study                                                                                                         | Fit                                        |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| **Design Science method** | Main method: build the governance framework/artifact.                                                                     | Natural fit                                |
-| **Case study**            | Demonstrate the artifact in one Peruvian financial institution or central-bank-related context.                           | Valid as evaluation setting                |
+| **Design Science method** | Main method: build the governance framework trough an asistant for compliance risk/artifact.                                                                     | Natural fit                                |
+| **Case study**            | Demonstrate the artifact in one Peruvian bank or central-bank-related context.                           | Valid as evaluation setting                |
 | **Survey**                | Validate usefulness, clarity, and applicability with experts in risk, compliance, legal, data protection, and technology. | Possible with justification                |
 | **Experiment**            | Test AI/NLP classification performance for regulatory documents.                                                          | Possible if you include model benchmarking |
 | **Simulation**            | Simulate regulatory change scenarios, e.g., new AI rule, privacy breach, or SBS/BCRP guidance update.                     | Possible with justification                |
