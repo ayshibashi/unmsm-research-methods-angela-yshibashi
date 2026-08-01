@@ -2,11 +2,11 @@
 
 **Session 1**
 ## Overview
-Given that the Banco Central de Reserva del Peru is about to launch Phase 4 of its Retail Payments Interoperability Strategy, inspired by India's UPI platform, which introduces a centralized payment initiation model, our interest has grown because strengthening and modernizing the country's National Payments System has also increased the need to mitigate regulatory risk.
+Given that the Banco Central de Reserva del Peru is about to launch Phase 4 of its Retail Payments Interoperability Strategy, inspired by India's UPI platform, which introduces a centralized payment initiation model, our interest has grown because strengthening and modernizing the country's National Payments System has also increased the need to control and  mitigate regulatory risk.
 
 Design an adapted framework to the Peruvian banking regulatory ecosystem on Payment System, with regulations from SBS Superintendencia de Banca y Seguros, BCRP Banco Central de Reserva del Peru, ANPDP Autoridad Nacional de Proteccion de Datos Personales and PCM Presidencia de Concejo de Ministros. They include Digital Transformation, AI governance requirements, cybersecurity regulations, and the emerging regulatory landscape affecting banking institutions.
 
-The key innovation lies in the creation of a continuous regulatory standards radar to detect, classify, and prioritize the regulatory obligations that banks must fulfill within the framework of the payment system.
+The key innovation lies in the creation of a continuous regulatory standards radar to detect, classify, and prioritize the regulatory obligations that banks must fulfill within the framework of the payment system and then a regulatory asistant to comply all the regulation.
 
 ## Paradigm Selected
 
