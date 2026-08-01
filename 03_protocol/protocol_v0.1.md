@@ -49,10 +49,10 @@ This system cross-references all regulatory authorities and identifies regulator
 
 	Outputs:
 
-	Why regulation was classified as relevant
+	Principal regulation as relevant
 	Key regulatory clauses
-	Confidence level
-	Compliance impact rationale
+	Regulatory risk
+	Compliance risk 
 	
 ## Participants/Data
 
@@ -88,9 +88,8 @@ Challenges to Consider
 
 ## Ethical Considerations
 
-*[Initial ethical concerns]*
 We tried to collect the data from SBS, BCRP, ANPDP, PCM wth requests because of speed, but the sites got blocked, antibot protection.
-Then we decide to use Playwright** (real navegator)as a  plan B with some human delays in retrieval.
+Then we decide to use Playwright** (works real navegator)as a  plan B with some human delays in retrieval.
 
 ## Timeline
 
