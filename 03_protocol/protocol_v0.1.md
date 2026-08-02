@@ -4,7 +4,7 @@
 
 ## Overview
 
-*This continuous regulatory standards radar to detect, classify, and prioritize the regulatory obligations that banks must fulfill within the framework of the payment system starts by collecting all documents published by regulatory authorities on a daily basis*
+*This continuous regulatory standards radar to detect, classify, and prioritize the regulatory obligations that banks must fulfill within the framework of the payment system starts by collecting all documents published by regulatory authorities on a daily basis from SBS, BCRP, ANPDP, PCM*
 
 
 ## Research Design
@@ -12,84 +12,83 @@
 
 	*Regulators
       ↓
-	*Document Collection
+	*Document Collection (Classification in Relevant or not relevant)
       ↓
-	*NLP Preprocessing
+	*Data visualisation
       ↓
-	*Vector Store
+	*Data Pre-Processing (Cleaning)
       ↓
-	*AI Classification
+	*Data Visualisation (check before splitting)
       ↓
-	*Regulatory Obligation Extraction
+	*Splin in Train & Test (80% - 20%)
+	  ↓
+	*Embbeding
       ↓
-	*AI Governance Assessment
+	*Train model 
+	  ↓
+    *Results and comparison
       ↓
-	*Cybersecurity Control Mapping
-      ↓
-	*Risk Dashboard
-      ↓
-	*Owner Assignment
-
+    *Choose best model
+	
 ## Annotation Methodology
 This system cross-references all regulatory authorities and identifies regulatory gaps and upcoming compliance deadlines for banks.
 
 	
 ## AI Models to Evaluate
 	
-	Generative AI
+	Machine learnig models
 
-	GPT-5 class models
-	Llama 4
-	Mistral
-	Phi
+	Logistic Regression
+	SVM Super Vector Machine
+	Random Forest
 
 
 ## Explainability 
 
-
 	Outputs:
 
-	Principal regulation as relevant
-	Key regulatory clauses
-	Regulatory risk
-	Compliance risk 
+	Accuracy (indica el porcentaje total de documentos clasificados correctamente).
+	Precision (mide cuántos de los documentos clasificados como relevantes realmente eran relevantes)
+	Recall (indica cuántos de los documentos relevantes fueron detectados por el modelo).
+	F1-score (combina precision y recall en una sola medida. Es útil cuando se busca equilibrio entre ambos).
+	ROC-AUC (mide la capacidad del modelo para diferenciar entre documentos relevantes y no relevantes. Un valor cercano a 1 representa una excelente capacidad de separación).
+	 
 	
 ## Participants/Data
 
-We collect the Data from Public # Scraper from Normativa (SBS, BCRP, etc.)
-At first tried with 'requests` (faster), then Scraper Normativa (SBS, BCRP, etc.) — versión Google Colab
+We collect the Data from Public # Scraper from Normativa (SBS, BCRP, ANPDP, PCM)
+At first tried with 'requests` (faster), then Scraper Normativa (SBS, BCRP, ANPDP, PCM)  and finally manually -versión Google Colab
 
-If a site blocks access (as happened when testing BCRP and SBS), then decides to use **Playwright** (a real browser) as a backup, and save the database to  **Google Drive** (so it's not lost every time you log out of Colab).
+If a site blocks access (as happened when testing BCRP and SBS), then decides to use **Playwright** (a real browser) as a backup, and save the database to  **Google Drive** (for the complement design science model).
 
 ## Procedure
 
-Implementing Ai Generative (The AI Engine)
 
-We have to look for superior engines when data is imbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation we focused on Payment Sstem to make it manageable.
+We need to look for higher procedures when the data is unbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation where we focus on the Payments System to make it manageable.
 
 
 
 ## Data Collection
 
 In Peru: You would need to automate the download of regulations from entities such as the SBS, BCRP, ANPDP and PCM as presented before. 
-Using Drive: While we can use Google Drive as an initial repository, that for training and production, we will need to process these files to extract the plain text (the text column), its length, and the regulatory identifier
+Using Drive: While we can use Google Drive as an initial repository, that for training and production, we will need to process these files to extract the docuemnt regulation.
+
 
 ## Analysis Plan
 
-*A Hybrid Approach (AI + Rules)
-A key detail from the study is that they did not use AI alone. The system operates with a hybrid pipeline:
-
-1. AI Prediction (engine): Classifies relevance based on context
-2. Deterministic Rules (Regex): Searches for specific keywords or filters by desired or undesired regulators and document types. This is especially useful at the beginning of the project when we have fewer annotated samples to train the model.
+1. Machie larning prediction: Classifies relevance based on context
+2. Deterministic Rules: Searches for specific keywords or filters by desired or undesired regulators and document types. This is especially useful at the beginning of the project when we have fewer annotated samples to train the model.
 
 Challenges to Consider
 
+The antibot protectioin some institutions rin.
 
 
 ## Ethical Considerations
 
 We tried to collect the data from SBS, BCRP, ANPDP, PCM wth requests because of speed, but the sites got blocked, antibot protection.
 Then we decide to use Playwright** (works real navegator)as a  plan B with some human delays in retrieval.
+Finally decided to narrow the projet scope and do it manually.
 
 ## Timeline
 
