@@ -61,6 +61,6 @@ How can AI support the continuous monitoring of regulatory obligations related t
 
 Open public data.
 
-Alternative evaluation based on machia learning
+Alternative evaluation based on machine learning
 
 Management new regulations 
