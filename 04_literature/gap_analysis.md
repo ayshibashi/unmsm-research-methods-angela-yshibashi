@@ -90,8 +90,7 @@ AND "machine learning"
 ```
 
 The same conceptual blocks were applied in PRIMO and Scopus, adapting the syntax to the search interface of each database.
-
-The query was intentionally specific because earlier broad searches returned a large number of unrelated studies concerning banking products, credit scoring, fraud detection, employee management, telecommunications, and general Artificial Intelligence applications.
+The query was intentionally.
 
 ---
 
