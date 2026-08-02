@@ -61,3 +61,9 @@ See the directory structure below for organization of research artifacts across 
 
 - **Reflective Writing**: `reflections/`
 - **MLflow Tracking**: `mlruns/`
+
+## Dataset
+
+The dataset is stored separately in Google Drive.
+
+[Dataset download and setup instructions](05_pipeline/data_access.md)
