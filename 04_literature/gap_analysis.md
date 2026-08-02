@@ -41,11 +41,10 @@ The literature review was guided by the following question:
 The following supporting questions were considered:
 
 1. What methods are used to represent and classify legal or regulatory documents?
-2. How are documents that exceed conventional transformer input limits processed?
-3. What evidence exists for Spanish-language or multilingual legal classification?
-4. Can classical Machine Learning models remain useful when combined with pretrained semantic embeddings?
-5. What data-quality controls are applied before training document-classification models?
-6. Is preliminary document-relevance filtering addressed before detailed compliance analysis?
+2. What evidence exists for Spanish-language or multilingual legal classification?
+3. Can classical Machine Learning models remain useful when combined with pretrained semantic embeddings?
+4. What data-quality controls are applied before training document-classification models?
+5. Is preliminary document-relevance filtering addressed before detailed compliance analysis?
 
 ---
 
@@ -63,7 +62,7 @@ Supporting methodological studies were also consulted from recognized academic r
 - Multilingual legal classification.
 - Long-document classification.
 - Regulatory text analysis.
-- PRISMA reporting.
+
 
 ---
 
@@ -440,18 +439,6 @@ Some results address:
 
 These publications justify data protection as a regulatory-monitoring topic but do not implement the proposed PDF-classification pipeline.
 
-### 9.5 Digital transformation and banking innovation
-
-Several studies analyze:
-
-- FinTech.
-- Digital platforms.
-- Digital transformation.
-- AI-based banking products.
-- Technology-enabled financial services.
-
-These studies provide contextual support but are broader than preliminary regulatory-document filtering.
-
 ---
 
 ## 10. Methodological Literature Supporting the Artifact
@@ -524,7 +511,7 @@ However, these studies do not evaluate:
 
 ### 11.5 Most banking AI research does not classify regulatory documents
 
-The new PRIMO and Scopus results include many studies about AI in banking, credit risk, financial stability, governance, customer services, and digital transformation.
+The PRIMO and Scopus results include many studies about AI in banking, credit risk, financial stability, governance, customer services, and digital transformation.
 
 This confirms that banking AI is an active research field. However, it also reveals that document-level relevance filtering remains less directly addressed.
 
@@ -574,7 +561,7 @@ Much of the identified literature focuses on:
 - AI governance.
 - Regulatory reporting.
 - Risk quantification.
-- Cybersecurity.
+- Cyberdefense.
 - Compliance interpretation.
 
 These tasks generally assume that the relevant source documents have already been identified.
@@ -782,14 +769,9 @@ The artifact does not replace legal, regulatory, risk, or compliance specialists
 The review has the following limitations:
 
 - PRIMO and Scopus were the principal discovery databases.
-- The 34 identified records still require formal duplicate checking and screening documentation.
 - Some relevant publications may exist in local or non-indexed repositories.
-- Proprietary RegTech systems may not be publicly documented.
-- Search counts can change as databases are updated.
 - Scopus and PRIMO may index overlapping records.
-- The Scopus results were restricted to a very recent period.
 - The focused query may exclude useful studies that use different terminology.
-- Foundational methodological studies published before 2021 were necessary.
 - The absence of an identified Peruvian study does not prove that no similar system exists.
 
 ---
