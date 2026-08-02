@@ -504,138 +504,247 @@ A record is excluded when:
 
 # 12. Duplicate Detection
 
-The 22 PRIMO records and 12 Scopus records must be consolidated into a single screening spreadsheet.
+The 22 records identified through PRIMO and the 12 records identified through Scopus were consolidated into a single preliminary screening set.
 
-Duplicates should be identified using:
+Duplicates were identified using:
 
 1. DOI.
-2. Normalized title.
-3. Authors and publication year when DOI is unavailable.
+2. Normalized publication title.
+3. Authors and publication year when a DOI was unavailable.
 
-The normalized title should:
+The normalized title was:
 
-- Be converted to lowercase.
-- Remove punctuation.
-- Remove duplicated spaces.
-- Ignore minor formatting differences.
+- Converted to lowercase.
+- Stripped of punctuation.
+- Normalized for repeated whitespace.
+- Compared while ignoring minor formatting differences.
 
-Only one copy of each duplicated study should proceed to screening.
+One duplicate publication was identified:
+
+| Scopus record | PRIMO record | Decision |
+|---:|---:|---|
+| 8 | 7 | One copy retained; one duplicate removed |
+
+Although the duplicated study was also not directly aligned with the proposed regulatory-document classification task, it was counted only as a duplicate removed before screening. It was not counted again among the title-and-abstract exclusions.
+
+### Duplicate-removal result
+
+| Item | Number |
+|---|---:|
+| Records before duplicate checking | 34 |
+| Duplicate records removed | 1 |
+| Unique records remaining | 33 |
 
 ---
 
 # 13. Screening Procedure
 
-The review uses the following stages.
+The review followed the stages below.
 
 ## Stage 1: Identification
 
-Records are retrieved from PRIMO and Scopus.
+Records were identified from:
 
-Current total:
+| Database | Records |
+|---|---:|
+| PRIMO | 22 |
+| Scopus | 12 |
+| **Total** | **34** |
+
+---
+
+## Stage 2: Duplicate Removal
+
+One duplicated study appeared in both databases.
 
 ```text
-34 records before duplicate checking
+Duplicate records removed: 1
 ```
 
-## Stage 2: Duplicate removal
+After duplicate removal:
 
-Duplicate records are removed using DOI and title.
+```text
+Unique records: 33
+```
 
-## Stage 3: Title-and-abstract screening
+---
 
-Each unique record is evaluated against the inclusion and exclusion criteria.
+## Stage 3: Title-and-Abstract Screening
 
-The decision must be:
+The titles and available abstracts of the 33 unique records were reviewed according to the inclusion and exclusion criteria.
+
+The following decisions were available:
 
 - `Include`.
 - `Exclude`.
 - `Uncertain`.
 
-## Stage 4: Full-text retrieval
+A record was excluded when its principal objective was not related to regulatory-document analysis, legal-document classification, compliance-document processing, or a directly applicable methodology.
 
-The complete publication is sought for records marked `Include` or `Uncertain`.
+### Records excluded during title-and-abstract screening
 
-## Stage 5: Full-text eligibility
+| Database | Record ID | Main focus | Decision | Exclusion reason |
+|---|---:|---|---|---|
+| Scopus | 2 | Responsible AI capabilities in finance | Exclude | General responsible-AI study without regulatory-document classification |
+| Scopus | 3 | Credit scoring under European Union law | Exclude | Focused on credit scoring rather than document relevance classification |
+| Scopus | 11 | Artificial Intelligence in the Islamic finance industry | Exclude | Focused on Islamic finance and general AI oversight |
+| PRIMO | 4 | Fraud-detection application | Exclude | Focused on fraud detection |
+| PRIMO | 11 | FinTech and its implications | Exclude | Broad FinTech study without document-classification methodology |
+| PRIMO | 12 | Fraud-detection application | Exclude | Focused on fraud detection |
+| PRIMO | 17 | Fraud-detection application | Exclude | Focused on fraud detection |
+| PRIMO | 27 | Explainable Artificial Intelligence | Exclude | Explainable-AI focus without direct regulatory-document classification |
 
-The study is evaluated according to:
+### Title-and-abstract screening result
+
+| Screening outcome | Number |
+|---|---:|
+| Unique records screened | 33 |
+| Records excluded | 8 |
+| Records retained for full-text review | 25 |
+
+---
+
+## Stage 4: Full-Text Retrieval
+
+The full text should be sought for the 25 records retained after title-and-abstract screening.
+
+```text
+Reports sought for retrieval: 25
+```
+
+For each publication, the screening matrix must record:
+
+- Full text retrieved: `Yes` or `No`.
+- Full text assessed: `Yes` or `No`.
+- Final decision: `Include` or `Exclude`.
+- Specific exclusion reason, when applicable.
+
+At the current stage, the full-text retrieval and eligibility assessment have not yet been completed.
+
+---
+
+## Stage 5: Full-Text Eligibility
+
+The 25 retained reports must be assessed according to:
 
 - Research objective.
-- Document type.
-- Dataset.
-- Method.
-- Evaluation.
-- Relevance to the artifact.
+- Regulatory or legal context.
+- Type of documents analyzed.
+- Dataset characteristics.
+- Machine Learning or NLP methodology.
+- Text representation method.
+- Evaluation metrics.
+- Relationship with preliminary relevance classification.
+- Applicability to the proposed artifact.
 
-## Stage 6: Final inclusion
+Possible full-text exclusion reasons include:
 
-Eligible studies are included in the qualitative synthesis and literature-gap analysis.
+- No regulatory or legal-document application.
+- No document-classification method.
+- Focused only on structured financial data.
+- No methodological detail.
+- Full text unavailable.
+- No contribution to the research questions.
+- General banking or AI discussion without document analysis.
+
+---
+
+## Stage 6: Final Inclusion
+
+Only studies that satisfy the full inclusion criteria will be incorporated into:
+
+- The qualitative narrative synthesis.
+- The literature-gap analysis.
+- The methodological justification of the artifact.
+
+The final number of included studies will be calculated after the full-text eligibility review.
 
 ---
 
 # 14. Screening Matrix
 
-The following structure should be used to control the review:
+The complete screening matrix should contain the 34 original records and document every selection decision.
 
-| ID | Database | Title | Authors | Year | DOI | Duplicate | Title/abstract decision | Full text | Final decision | Exclusion reason |
-|---:|---|---|---|---:|---|---|---|---|---|---|
-| 1 | PRIMO |  |  |  |  |  |  |  |  |  |
-| 2 | PRIMO |  |  |  |  |  |  |  |  |  |
-| 3 | Scopus |  |  |  |  |  |  |  |  |  |
+A separate file is recommended:
 
-A single explicit exclusion reason should be recorded for every excluded study.
+```text
+04_literature/screening_matrix.csv
+```
 
-Recommended reasons include:
+The following fields should be included:
 
-- Wrong domain.
-- No document-analysis method.
-- No regulatory or legal context.
-- Focused only on structured financial data.
-- No Machine Learning or NLP.
-- Insufficient methodological information.
-- Duplicate record.
-- Full text unavailable.
+| ID | Database | Database record | Title | Authors | Year | DOI | Duplicate | Title/abstract decision | Full text | Final decision | Exclusion reason |
+|---:|---|---:|---|---|---:|---|---|---|---|---|---|
+| 1 | Scopus | 8 |  |  |  |  | Yes | Removed before screening | Not applicable | Exclude | Duplicate of PRIMO record 7 |
+| 2 | PRIMO | 7 |  |  |  |  | No | Include | Pending | Pending | Original copy retained |
+| 3 | Scopus | 2 | Building capabilities for responsible AI in finance |  | 2026 |  | No | Exclude | Not assessed | Exclude | General responsible-AI study |
+| 4 | Scopus | 3 | Unfit for purpose? The legal maze of credit scoring under EU law | Arnal J. | 2026 |  | No | Exclude | Not assessed | Exclude | Credit-scoring focus |
+| 5 | Scopus | 11 | Artificial Intelligence and Islamic finance industry: problems and oversight |  | 2025 |  | No | Exclude | Not assessed | Exclude | Islamic-finance and general AI-oversight focus |
+| 6 | PRIMO | 4 |  |  |  |  | No | Exclude | Not assessed | Exclude | Fraud-detection focus |
+| 7 | PRIMO | 11 |  |  |  |  | No | Exclude | Not assessed | Exclude | Broad FinTech focus |
+| 8 | PRIMO | 12 |  |  |  |  | No | Exclude | Not assessed | Exclude | Fraud-detection focus |
+| 9 | PRIMO | 17 |  |  |  |  | No | Exclude | Not assessed | Exclude | Fraud-detection focus |
+| 10 | PRIMO | 27 |  |  |  |  | No | Exclude | Not assessed | Exclude | Explainable-AI focus without regulatory-document classification |
+
+The exact title, authors, year, and DOI of each PRIMO record should be copied from its database result before the matrix is considered complete.
+
+A single explicit exclusion reason must be recorded for every excluded study.
+
+Recommended standardized reasons are:
+
+- `Duplicate record`.
+- `Fraud-detection focus`.
+- `Credit-scoring focus`.
+- `General FinTech focus`.
+- `General responsible-AI focus`.
+- `No regulatory-document classification`.
+- `No legal or regulatory context`.
+- `No document-analysis method`.
+- `Insufficient methodological information`.
+- `Full text unavailable`.
 
 ---
 
 # 15. Data Extraction
 
-The following data should be extracted from every included study:
+For every study finally included after full-text assessment, the following information must be extracted:
 
 | Field | Description |
 |---|---|
 | Citation | Authors and publication year |
-| Country or context | Jurisdiction or application environment |
+| Database | PRIMO or Scopus |
+| Country or jurisdiction | Geographic or regulatory context |
 | Research objective | Problem addressed |
-| Domain | Legal, banking, regulatory, financial, or compliance |
-| Document type | Laws, judgments, contracts, PDFs, regulations, clauses |
-| Language | Language of the documents |
-| Dataset size | Number of records or documents |
+| Domain | Legal, banking, financial, regulatory, or compliance |
+| Document type | Laws, regulations, judgments, reports, clauses, or PDFs |
+| Language | Language of the analyzed documents |
+| Dataset size | Number of documents or records |
 | Labels | Binary, multiclass, or multi-label |
-| Preprocessing | Cleaning, segmentation, tokenization |
-| Text representation | TF-IDF, embeddings, BERT, Sentence-BERT |
+| Preprocessing | Cleaning, segmentation, or tokenization |
+| Representation | TF-IDF, embeddings, BERT, Sentence-BERT, or another method |
 | Model | Algorithm or architecture |
-| Evaluation metrics | Accuracy, precision, recall, F1, ROC-AUC |
-| Main results | Principal findings |
-| Limitations | Limitations reported by authors |
-| Relevance | Relationship with the proposed project |
+| Evaluation metrics | Accuracy, precision, recall, F1-score, ROC-AUC |
+| Main findings | Principal results |
+| Limitations | Limitations identified by the authors |
+| Relevance | Relationship with the proposed artifact |
 
 ---
 
 # 16. Quality Assessment
 
-Each included study should be evaluated using the following questions:
+Each full-text study retained for inclusion should be evaluated using the following criteria:
 
 | Quality question | Response |
 |---|---|
 | Is the research objective clearly stated? | Yes / Partial / No |
 | Is the dataset sufficiently described? | Yes / Partial / No |
 | Is the preprocessing method explained? | Yes / Partial / No |
-| Is the classification method reproducible? | Yes / Partial / No |
+| Is the model or analytical method reproducible? | Yes / Partial / No |
 | Are evaluation metrics reported? | Yes / Partial / No |
 | Are limitations discussed? | Yes / Partial / No |
 | Is the study relevant to the review questions? | Yes / Partial / No |
 
-A simple score may be assigned:
+The scoring system is:
 
 ```text
 Yes = 2 points
@@ -643,13 +752,11 @@ Partial = 1 point
 No = 0 points
 ```
 
-With seven questions, the maximum score is:
+The maximum score is:
 
 ```text
 14 points
 ```
-
-Suggested interpretation:
 
 | Score | Interpretation |
 |---:|---|
@@ -657,33 +764,24 @@ Suggested interpretation:
 | 7–10 | Moderate methodological relevance |
 | 0–6 | Low methodological relevance |
 
-Studies should not be excluded solely because of the score. The score supports the qualitative interpretation.
+The score supports the qualitative assessment but should not be the only reason for excluding a publication.
 
 ---
 
 # 17. Synthesis Method
 
-Because the identified studies use different:
+Because the studies differ in objectives, datasets, labels, languages, document types, algorithms, and evaluation measures, a statistical meta-analysis is not considered appropriate.
 
-- Research objectives.
-- Datasets.
-- Labels.
-- Languages.
-- Models.
-- Evaluation measures.
+The review therefore uses a qualitative narrative synthesis.
 
-A statistical meta-analysis is not appropriate.
-
-The review therefore uses a **qualitative narrative synthesis**.
-
-The studies are grouped according to:
+Included studies will be grouped into the following themes:
 
 1. Legal and regulatory document classification.
 2. Long-document processing.
-3. Semantic and multilingual representations.
-4. Banking AI and regulatory compliance.
-5. Risk, governance, and data protection.
-6. Preliminary relevance filtering.
+3. Semantic and multilingual text representation.
+4. Banking Artificial Intelligence and regulatory compliance.
+5. Risk governance and data protection.
+6. Preliminary document-relevance filtering.
 7. Data-quality and reproducibility practices.
 
 ---
@@ -696,21 +794,31 @@ The studies are grouped according to:
 |---|---:|
 | Records identified in PRIMO | 22 |
 | Records identified in Scopus | 12 |
-| Total records before duplicate checking | 34 |
-| Duplicates removed | Pending formal review |
-| Unique records screened | Pending formal review |
-| Records excluded by title and abstract | Pending formal review |
-| Full texts retrieved | Pending formal review |
-| Full texts assessed | Pending formal review |
-| Final included studies | Pending formal review |
+| Total records identified | 34 |
+| Duplicate records removed | 1 |
+| Unique records screened by title and abstract | 33 |
+| Records excluded by title and abstract | 8 |
+| Reports sought for full-text retrieval | 25 |
+| Reports not retrieved | Pending full-text retrieval |
+| Full-text reports assessed for eligibility | Pending full-text review |
+| Full-text reports excluded | Pending full-text review |
+| Studies included in qualitative synthesis | Pending full-text review |
 
-The only final verified value at this stage is:
+### Verified screening equations
 
 ```text
-Initial database records: 34
+Unique records screened
+= 34 − 1
+= 33
 ```
 
-The final included-study count will be completed after reviewing the screening matrix.
+```text
+Reports sought for full-text retrieval
+= 33 − 8
+= 25
+```
+
+The final included-study count must not be reported until the 25 retained records have undergone full-text assessment.
 
 ---
 
@@ -718,23 +826,23 @@ The final included-study count will be completed after reviewing the screening m
 
 ```mermaid
 flowchart TD
-    A["Records identified<br/>PRIMO: n = 22<br/>Scopus: n = 12<br/>Total: n = 34"]
+    A["Records identified from databases<br/>PRIMO: n = 22<br/>Scopus: n = 12<br/>Total: n = 34"]
 
-    B["Duplicate records removed<br/>Pending formal review"]
+    B["Records removed before screening<br/>Duplicate records: n = 1<br/>Other removals: n = 0"]
 
-    C["Unique records screened<br/>Pending formal review"]
+    C["Unique records screened by title and abstract<br/>n = 33"]
 
-    D["Records excluded by title and abstract<br/>Pending formal review"]
+    D["Records excluded after title-and-abstract screening<br/>n = 8"]
 
-    E["Reports sought for retrieval<br/>Pending formal review"]
+    E["Reports sought for full-text retrieval<br/>n = 25"]
 
-    F["Reports not retrieved<br/>Pending formal review"]
+    F["Reports not retrieved<br/>Pending"]
 
-    G["Full-text reports assessed<br/>Pending formal review"]
+    G["Full-text reports assessed for eligibility<br/>Pending"]
 
-    H["Full-text reports excluded with reasons<br/>Pending formal review"]
+    H["Full-text reports excluded, with reasons<br/>Pending"]
 
-    I["Studies included in qualitative synthesis<br/>Pending formal review"]
+    I["Studies included in qualitative synthesis<br/>Pending"]
 
     A --> B
     B --> C
@@ -746,223 +854,98 @@ flowchart TD
     G --> I
 ```
 
-The pending values must be replaced only after the corresponding decisions are recorded in the screening matrix.
+---
+
+## 18.3 PRISMA Counting Table
+
+| PRISMA stage | Number |
+|---|---:|
+| Records identified from PRIMO | 22 |
+| Records identified from Scopus | 12 |
+| Total records identified | 34 |
+| Duplicate records removed | 1 |
+| Records removed for other reasons before screening | 0 |
+| Records screened by title and abstract | 33 |
+| Records excluded by title and abstract | 8 |
+| Reports sought for full-text retrieval | 25 |
+| Reports not retrieved | Pending |
+| Full-text reports assessed for eligibility | Pending |
+| Full-text reports excluded | Pending |
+| Studies included in the qualitative synthesis | Pending |
+
+---
+
+## 18.4 Reasons for Title-and-Abstract Exclusion
+
+| Exclusion category | Records |
+|---|---:|
+| Fraud-detection focus | 3 |
+| Credit-scoring focus | 1 |
+| General FinTech focus | 1 |
+| General responsible-AI focus | 1 |
+| Islamic-finance/general AI-oversight focus | 1 |
+| Explainable-AI focus without regulatory-document classification | 1 |
+| **Total excluded** | **8** |
 
 ---
 
 # 19. Preliminary Themes Identified
 
-## Theme 1: Artificial Intelligence in banking and finance
+## Theme 1: Artificial Intelligence in Banking and Finance
 
-Several identified records examine:
+Several identified records examine Artificial Intelligence adoption, banking automation, financial decision-making, and digital financial services.
 
-- AI adoption in banking.
-- Generative AI.
-- Financial decision-making.
-- Banking automation.
-- Digital financial products.
-- Banking performance.
+Some of these records were excluded when their focus was limited to:
 
-These studies demonstrate the importance of Artificial Intelligence in the financial sector but do not necessarily classify regulatory documents.
+- General financial innovation.
+- Responsible AI without document classification.
+- FinTech implications.
+- Credit-scoring applications.
+- Fraud detection.
+
+The remaining publications must demonstrate a direct contribution to regulatory, compliance, legal, or document-analysis objectives.
 
 ---
 
-## Theme 2: Regulatory compliance and AI governance
+## Theme 2: Regulatory Compliance and AI Governance
 
-The identified records include studies concerning:
+The search identified publications related to:
 
-- European AI Act compliance.
-- Responsible AI.
-- Ethical AI.
+- AI governance.
+- Regulatory compliance.
+- European AI regulation.
 - Internal auditing.
-- Regulatory reporting.
+- Data protection.
 - Financial-sector oversight.
 
-These studies provide regulatory context but often focus on governance obligations rather than preliminary document relevance.
+These records may provide contextual support, but full-text assessment is necessary to determine whether they contain a document-processing or classification methodology relevant to the artifact.
 
 ---
 
-## Theme 3: Risk management and financial stability
+## Theme 3: Risk Management and Financial Stability
 
-Several studies address:
+Several records address:
 
-- Credit risk.
 - Regulatory risk.
-- Financial stability.
 - Cybersecurity.
 - Risk governance.
-- AI-assisted auditing.
+- Financial stability.
+- AI-assisted risk analysis.
 
-These studies support the importance of regulatory-risk monitoring but frequently use financial or transactional data instead of regulatory PDF text.
+Fraud-detection and credit-scoring studies were excluded when they did not analyze regulatory or legal documents.
 
 ---
 
-## Theme 4: Data protection and data sovereignty
+## Theme 4: Data Protection and Data Sovereignty
 
-Some studies examine:
+Some records focus on:
 
 - Personal-data protection.
-- Data privacy.
 - Data sovereignty.
+- Digital financial systems.
 - Banking disclosure.
-- Digital financial-system security.
 
-These topics justify the inclusion of data protection in the relevant-document category.
-
----
-
-## Theme 5: Long legal-document processing
-
-Methodological studies identify document length as a major challenge.
-
-Common solutions include:
-
-- Segmentation.
-- Hierarchical models.
-- Sparse attention.
-- Sliding windows.
-- Chunk selection.
-- Aggregation of chunk embeddings.
-
-This theme directly supports the fragmentation strategy used in the proposed artifact.
-
----
-
-## Theme 6: Multilingual and Spanish legal-text classification
-
-Existing studies show that legal-document classification can be performed across multiple languages and with Spanish legal texts.
-
-However, the most established datasets focus on:
-
-- European legislation.
-- Court judgments.
-- Large multilingual corpora.
-
-They do not directly represent Peruvian institutional regulations.
-
----
-
-## Theme 7: Model complexity and efficient baselines
-
-The literature compares:
-
-- Large pretrained transformers.
-- Domain-specific transformers.
-- Hierarchical architectures.
-- Linear baselines.
-- Classical Machine Learning.
-
-This theme supports comparing simpler models when the dataset is small and computational resources are limited.
-
----
-
-# 20. Preliminary Answers to the Research Questions
-
-## Answer to RQ1
-
-Previous studies use:
-
-- Logistic Regression.
-- Support Vector Machines.
-- Tree-based models.
-- Neural networks.
-- BERT.
-- LEGAL-BERT.
-- Longformer.
-- Hierarchical transformers.
-- Sentence embeddings.
-- Multilingual transformer models.
-
-The proposed project contributes by combining multilingual embeddings with classical classifiers for binary regulatory-document relevance.
-
----
-
-## Answer to RQ2
-
-Long legal documents are commonly processed using:
-
-- Segmentation.
-- Sliding windows.
-- Hierarchical encoding.
-- Sparse attention.
-- Chunk aggregation.
-
-The proposed project applies overlapping chunks and averages their semantic embeddings to create one vector per PDF.
-
----
-
-## Answer to RQ3
-
-Preliminary document filtering is less represented than advanced activities such as:
-
-- Obligation extraction.
-- Legal prediction.
-- Compliance reporting.
-- Risk analysis.
-- Governance assessment.
-
-The proposed artifact focuses specifically on deciding whether a document should receive detailed review.
-
----
-
-## Answer to RQ4
-
-Multilingual and Spanish legal classification exists, but the reviewed literature provides limited evidence for:
-
-- Peruvian regulatory documents.
-- Documents from BCRP, SBS, or PCM.
-- Binary relevance filtering.
-- Small local datasets.
-
----
-
-## Answer to RQ5
-
-For small datasets, promising approaches include:
-
-- Pretrained representations.
-- Transfer learning.
-- Semantic embeddings.
-- Strong classical baselines.
-- Limited model complexity.
-- Careful validation.
-
-This supports the use of Logistic Regression, linear SVM, and Random Forest over pretrained multilingual embeddings.
-
----
-
-## Answer to RQ6
-
-Data-quality practices are not always described in sufficient detail.
-
-The proposed artifact explicitly includes:
-
-- Two PDF-extraction methods.
-- Exclusion of documents without usable text.
-- Duplicate detection.
-- Train-test separation before embedding-based evaluation.
-- Verification of shared documents.
-- Numerical validation of embeddings.
-
----
-
-# 21. Preliminary Gaps in the Literature
-
-The systematic review supports the following preliminary gaps:
-
-1. Limited evidence involving Peruvian regulatory PDFs.
-2. Limited research on preliminary binary relevance filtering.
-3. Limited lightweight methods for small Spanish-language datasets.
-4. Limited reporting of PDF-extraction and duplicate controls.
-5. Limited comparison of classical classifiers using multilingual embeddings.
-6. Limited integration between regulatory monitoring and Design Science.
-7. Limited external validation using unseen Peruvian institutional documents.
-
-A detailed explanation of these gaps is presented in:
-
-```text
-04_literature/gap_analysis.md
-```
+These topics are conceptually related to the project’s relevant-document categories, but inclusion depends on whether the study contributes to document analysis, regulatory monitoring, or compliance classification.
 
 ---
 
@@ -970,17 +953,18 @@ A detailed explanation of these gaps is presented in:
 
 The review has the following limitations:
 
-- Only PRIMO and Scopus were used as principal discovery databases.
-- The screening of the 34 records is not yet complete.
-- The review is being conducted by one research team.
+- PRIMO and Scopus were the principal discovery databases.
+- One duplicated publication was identified across the databases.
+- Title-and-abstract screening was conducted by the research team.
+- The 25 retained reports still require full-text eligibility assessment.
 - Independent screening by a second reviewer has not yet been performed.
-- Some relevant studies may exist in local repositories.
-- Proprietary RegTech systems may not be publicly documented.
-- Search results may change as databases are updated.
-- The focused banking query may exclude studies using different terminology.
-- Several foundational methodological studies were published before the selected date range.
-- Search-result relevance cannot be determined solely from titles.
-
+- Several PRIMO records require complete bibliographic transcription into the screening matrix.
+- Some relevant studies may exist in local or non-indexed repositories.
+- Search results may change as the databases are updated.
+- The focused banking query may exclude studies that use different terminology.
+- Some results matched individual keywords but addressed fraud detection, credit scoring, FinTech, or general AI instead of regulatory-document classification.
+- Search-result relevance cannot be determined only from keyword matching.
+- The final qualitative synthesis may change after the full-text review.
 ---
 
 # 23. Conclusion
