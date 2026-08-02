@@ -4,18 +4,16 @@
 
 ## 1. Overview
 
-The literature review examined previous research related to banking regulation, compliance-risk management, artificial intelligence, Regulatory Technology (RegTech), Legal Natural Language Processing, semantic embeddings, long-document processing, and Machine Learning-based document classification.
+The literature review examined previous research related to banking regulation, compliance-risk management, artificial intelligence, Regulatory framework, long-document processing, and Machine Learning-based document classification.
 
 The purpose of the review was to determine whether previous studies had developed an artifact directly comparable to the proposed research: a Machine Learning framework capable of classifying Peruvian regulatory and institutional PDF documents as relevant or not relevant for preliminary regulatory monitoring.
 
-The reviewed literature demonstrates that Artificial Intelligence and Natural Language Processing can support:
+The reviewed literature demonstrates that Artificial Intelligence can support:
 
 - Legal-document classification.
 - Regulatory-text analysis.
 - Compliance monitoring.
-- Semantic document retrieval.
 - Classification of long legal documents.
-- Multilingual legal-topic classification.
 - Automated document review.
 - Analysis of regulatory and financial information.
 
@@ -26,11 +24,9 @@ Within the literature reviewed, no directly comparable study was identified that
 - Peruvian regulatory and institutional PDF documents.
 - Binary relevance classification.
 - Spanish-language institutional content.
-- Multilingual semantic embeddings.
 - Fragmentation of long PDF documents.
 - Comparison of classical Machine Learning algorithms.
 - Preliminary filtering before detailed regulatory review.
-- Explicit controls for extraction failures and duplicate documents.
 
 Therefore, this research addresses a contextual, methodological, and empirical gap through the design and evaluation of a reproducible regulatory-document classification artifact.
 
