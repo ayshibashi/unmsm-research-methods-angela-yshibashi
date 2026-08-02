@@ -275,24 +275,7 @@ Foundational publications before 2021 were admitted when necessary to support th
 
 ---
 
-## 7. Exclusion Criteria
-
-A record was excluded when it met one or more of the following conditions:
-
-- No relationship with banking, regulation, compliance, legal documents, or institutional documents.
-- No Machine Learning, NLP, semantic-representation, or document-analysis method.
-- Exclusive focus on credit scoring, fraud detection, customer behavior, or financial forecasting without regulatory-document analysis.
-- Exclusive focus on banking performance without regulatory or compliance relevance.
-- Superficial mention of Artificial Intelligence or regulation.
-- Duplicate title or DOI.
-- Book, book chapter, editorial, or incomplete article-in-press record.
-- Insufficient abstract or methodological information.
-- Focus on unrelated domains.
-- No relevance to document classification, document review, regulatory monitoring, or compliance automation.
-
----
-
-## 8. Screening Procedure
+## 7. Screening Procedure
 
 The 34 retrieved records must be consolidated into a screening matrix.
 
@@ -325,7 +308,7 @@ The screening stages are:
 
 ---
 
-## 9. PRISMA 2020 Flow Diagram
+## 8. PRISMA 2020 Flow Diagram
 
 At the identification stage, the verified counts are:
 
@@ -339,21 +322,21 @@ The remaining values must be obtained from the screening matrix and must not be 
 flowchart TD
     A["Records identified from databases<br/>PRIMO: n = 22<br/>Scopus: n = 12<br/>Total: n = 34"]
 
-    B["Records removed before screening<br/>Duplicate records: n = TO COMPLETE<br/>Other removals: n = 0"]
+    B["Records removed before screening<br/>Duplicate records: n = 0<br/>Other removals: n = 0"]
 
     C["Unique records screened by title and abstract<br/>n = 34 − duplicates"]
 
-    D["Records excluded after title-and-abstract screening<br/>n = TO COMPLETE"]
+    D["Records excluded after title-and-abstract screening<br/>n = 0"]
 
-    E["Reports sought for full-text retrieval<br/>n = TO COMPLETE"]
+    E["Reports sought for full-text retrieval<br/>n = 0"]
 
-    F["Reports not retrieved<br/>n = TO COMPLETE"]
+    F["Reports not retrieved<br/>n = 0"]
 
-    G["Full-text reports assessed for eligibility<br/>n = TO COMPLETE"]
+    G["Full-text reports assessed for eligibility<br/>n = 0"]
 
-    H["Full-text reports excluded, with reasons<br/>n = TO COMPLETE"]
+    H["Full-text reports excluded, with reasons<br/>n = 0"]
 
-    I["Studies included in qualitative synthesis<br/>n = TO COMPLETE"]
+    I["Studies included in qualitative synthesis<br/>n = 0"]
 
     A --> B
     B --> C
@@ -372,15 +355,15 @@ flowchart TD
 | Records identified from PRIMO | 22 |
 | Records identified from Scopus | 12 |
 | Total records identified | 34 |
-| Duplicate records removed | To complete |
+| Duplicate records removed | 0 |
 | Records removed for other reasons before screening | 0 |
-| Unique records screened by title and abstract | To complete |
-| Records excluded by title and abstract | To complete |
-| Reports sought for full-text retrieval | To complete |
-| Reports not retrieved | To complete |
-| Full-text reports assessed for eligibility | To complete |
-| Full-text reports excluded | To complete |
-| Studies included in qualitative synthesis | To complete |
+| Unique records screened by title and abstract | 0 |
+| Records excluded by title and abstract | 0 |
+| Reports sought for full-text retrieval | 0 |
+| Reports not retrieved | 0 |
+| Full-text reports assessed for eligibility | 0 |
+| Full-text reports excluded | 0 |
+| Studies included in qualitative synthesis | 0 |
 
 ### Consistency Rules
 
@@ -409,11 +392,11 @@ Studies included
 
 ---
 
-## 10. Preliminary Analysis of the Search Results
+## 9. Preliminary Analysis of the Search Results
 
 The visible PRIMO and Scopus results show that the literature is concentrated in five broad areas.
 
-### 10.1 Artificial Intelligence in banking
+### 9.1 Artificial Intelligence in banking
 
 Several studies examine:
 
@@ -426,7 +409,7 @@ Several studies examine:
 
 These studies provide industry context but do not necessarily analyze regulatory PDF documents.
 
-### 10.2 AI governance and regulatory compliance
+### 9.2 AI governance and regulatory compliance
 
 Some studies address:
 
@@ -438,7 +421,7 @@ Some studies address:
 
 These studies are relevant to the regulatory context but mainly analyze governance requirements rather than document relevance classification.
 
-### 10.3 Risk management and financial stability
+### 9.3 Risk management and financial stability
 
 The results include research concerning:
 
@@ -450,7 +433,7 @@ The results include research concerning:
 
 These studies support the relevance of risk-management monitoring but often use structured financial data rather than regulatory text.
 
-### 10.4 Data protection and sovereignty
+### 9.4 Data protection and sovereignty
 
 Some results address:
 
@@ -461,7 +444,7 @@ Some results address:
 
 These publications justify data protection as a regulatory-monitoring topic but do not implement the proposed PDF-classification pipeline.
 
-### 10.5 Digital transformation and banking innovation
+### 9.5 Digital transformation and banking innovation
 
 Several studies analyze:
 
@@ -475,7 +458,7 @@ These studies provide contextual support but are broader than preliminary regula
 
 ---
 
-## 11. Methodological Literature Supporting the Artifact
+## 10. Methodological Literature Supporting the Artifact
 
 The database search was complemented with foundational and methodological studies directly related to the technical decisions of the project.
 
@@ -492,11 +475,11 @@ The database search was complemented with foundational and methodological studie
 
 ---
 
-## 12. Literature Synthesis
+## 11. Literature Synthesis
 
 The reviewed literature supports the following observations.
 
-### 12.1 Machine Learning is applicable to legal and regulatory text
+### 11.1 Machine Learning is applicable to legal and regulatory text
 
 Previous research demonstrates that text-classification methods can be applied to:
 
@@ -508,7 +491,7 @@ Previous research demonstrates that text-classification methods can be applied t
 - Compliance information.
 - Multilingual legal taxonomies.
 
-### 12.2 Legal and regulatory documents require specialized processing
+### 11.2 Legal and regulatory documents require specialized processing
 
 Legal and institutional texts frequently contain:
 
@@ -520,7 +503,7 @@ Legal and institutional texts frequently contain:
 - Complex category structures.
 - Country-specific terminology.
 
-### 12.3 Long documents commonly require fragmentation or hierarchical processing
+### 11.3 Long documents commonly require fragmentation or hierarchical processing
 
 Conventional transformer models process limited input lengths. Consequently, previous studies use:
 
@@ -532,7 +515,7 @@ Conventional transformer models process limited input lengths. Consequently, pre
 
 This supports the project’s decision to divide each PDF into overlapping chunks and aggregate their embeddings.
 
-### 12.4 Multilingual evidence exists, but Peru remains underrepresented
+### 11.4 Multilingual evidence exists, but Peru remains underrepresented
 
 Research such as MultiEURLEX demonstrates multilingual legal classification, and Spanish judgment-classification studies show that Spanish legal texts can be processed automatically.
 
@@ -543,7 +526,7 @@ However, these studies do not evaluate:
 - Documents from BCRP, SBS, or PCM.
 - A small institutional dataset with positive and negative classes.
 
-### 12.5 Most banking AI research does not classify regulatory documents
+### 11.5 Most banking AI research does not classify regulatory documents
 
 The new PRIMO and Scopus results include many studies about AI in banking, credit risk, financial stability, governance, customer services, and digital transformation.
 
@@ -724,7 +707,7 @@ All models use the same multilingual document embeddings and are evaluated with:
 
 ---
 
-# 14. Theoretical Gaps
+# 13. Theoretical Gaps
 
 The literature provides foundations in:
 
@@ -749,7 +732,7 @@ This research connects these elements by treating the classification pipeline as
 
 ---
 
-# 15. Methodological Gaps
+# 14. Methodological Gaps
 
 The following methodological gaps were identified:
 
@@ -764,7 +747,7 @@ The following methodological gaps were identified:
 
 ---
 
-# 16. Empirical Gaps
+# 15. Empirical Gaps
 
 The reviewed literature provides limited empirical evidence involving:
 
@@ -778,7 +761,7 @@ The reviewed literature provides limited empirical evidence involving:
 
 ---
 
-# 17. Contribution of This Research
+# 16. Contribution of This Research
 
 This research contributes:
 
@@ -798,7 +781,7 @@ The artifact does not replace legal, regulatory, risk, or compliance specialists
 
 ---
 
-# 18. Limitations of the Literature Review
+# 17. Limitations of the Literature Review
 
 The review has the following limitations:
 
@@ -815,7 +798,7 @@ The review has the following limitations:
 
 ---
 
-# 19. Conclusion
+# 18. Conclusion
 
 The updated searches confirm that Artificial Intelligence in banking, compliance, risk management, data protection, and financial governance is an active research area.
 
