@@ -8,7 +8,25 @@ Refined protocol incorporating feedback and refinements.
 
 ## Research Design
 
-*[Updated design details]*
+*Regulators
+  ↓
+*Document Collection (Classification in Relevant or not relevant)
+  ↓
+*Data visualisation
+  ↓
+*Data Pre-Processing (Cleaning)
+  ↓
+*Data Visualisation (check before splitting)
+  ↓
+*Splin in Train & Test (80% - 20%)
+  ↓
+*Embbeding
+  ↓
+*Train model 
+  ↓
+*Results and comparison
+  ↓
+*Choose best model
 
 ## Participants/Data
 
