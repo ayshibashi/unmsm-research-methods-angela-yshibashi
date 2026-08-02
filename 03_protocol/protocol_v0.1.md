@@ -9,26 +9,8 @@
 
 ## Research Design
 
+<img width="864" height="616" alt="image" src="https://github.com/user-attachments/assets/c220ca44-02ac-4b0b-b843-cb97e82c1308" />
 
-	*Regulators
-      ↓
-	*Document Collection (Classification in Relevant or not relevant)
-      ↓
-	*Data visualisation
-      ↓
-	*Data Pre-Processing (Cleaning)
-      ↓
-	*Data Visualisation (check before splitting)
-      ↓
-	*Splin in Train & Test (80% - 20%)
-	  ↓
-	*Embbeding
-      ↓
-	*Train model 
-	  ↓
-    *Results and comparison
-      ↓
-    *Choose best model
 	
 ## Annotation Methodology
 This system cross-references all regulatory authorities and identifies regulatory gaps and upcoming compliance deadlines for banks.
