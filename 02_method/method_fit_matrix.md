@@ -40,7 +40,7 @@ Technical component
 
 1. *Does this method match my paradigm´s view of what counts as knowledge?*
 2. Can I actually get the data this method needs ? 
-3. *What kind of new knowledge does this method produce? framework + deployable tool; demonstrate the artifact in one Peruvia Bank; Do a Survey*
+3. *What kind of new knowledge does this method produce? A risk classifier framework tool; demonstrate the artifact in one Peruvia Bank; Do a Survey*
    
 ## Method Fit Analysis
 
@@ -51,9 +51,9 @@ Technical component
 | *Mixed method* | 5/5 | 5/5 | 3/5 | 3/5 | 5/5 | 21/25 |
 
 ## Rationale for Selected Method(s)
-How can AI support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian banking sector?
+How can we support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian banking sector?
 
-The study is grounded in the Design Science Research paradigm because its central contribution is the development and evaluation of an artifact: a regulatory risk and AI compliance governance framework for the Peruvian banking sector. The artifact integrates regulatory risk management, compliance obligations, emerging AI regulations, and personal information protection requirements.
+The study is grounded in the Scientific Design Research paradigm, given that its main contribution is the development of an evaluation artifact: a risk governance and regulatory compliance framework for AI in the Peruvian banking sector. This artifact integrates regulatory risk management, compliance obligations, new AI regulations, and personal data protection requirements.
 
 ## Constraints & Limitations
 
@@ -61,6 +61,6 @@ How can AI support the continuous monitoring of regulatory obligations related t
 
 Open public data.
 
-Alternative modeling with AI Generation
+Alternative evaluation based on machia learning
 
 Management new regulations 
