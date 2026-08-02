@@ -16,7 +16,7 @@ Develop a continuous regulatory standards radar to detect, classify, and priorit
 
 ## Justification
 
-The question is: Can we build a system that ranks the relevance of X to avoid reviewing all regulations and determining their relevance? The model simply ranks them.
+The question is: Can we build a system that ranks the relevance of X to avoid reviewing all regulations and determining their relevance? The model simply clasifies them.
 
 The Peruvian banking sector faces numerous regulatory restrictions; our strategy focuses on just four key institutions to begin this study.
 
