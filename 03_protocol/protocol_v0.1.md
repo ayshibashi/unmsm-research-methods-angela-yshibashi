@@ -91,5 +91,5 @@ Then we decide to use Playwright** (works real navegator)as a  plan B with some 
 Finally decided to narrow the projet scope and do it manually.
 
 ## Timeline
-
-*[Project timeline]*
+ 
+Same as Design research or Pipeline (above)
