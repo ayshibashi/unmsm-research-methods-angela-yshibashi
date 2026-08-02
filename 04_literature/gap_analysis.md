@@ -4,33 +4,33 @@
 
 ## 1. Overview
 
-The literature review examined previous research related to regulatory-document analysis, banking regulation, compliance-risk management, artificial intelligence, data protection, Regulatory Technology (RegTech), Legal Natural Language Processing, semantic embeddings, and Machine Learning-based document classification.
+The literature review examined previous research related to banking regulation, compliance-risk management, artificial intelligence, Regulatory Technology (RegTech), Legal Natural Language Processing, semantic embeddings, long-document processing, and Machine Learning-based document classification.
 
 The purpose of the review was to determine whether previous studies had developed an artifact directly comparable to the proposed research: a Machine Learning framework capable of classifying Peruvian regulatory and institutional PDF documents as relevant or not relevant for preliminary regulatory monitoring.
 
-The reviewed literature includes studies on:
+The reviewed literature demonstrates that Artificial Intelligence and Natural Language Processing can support:
 
-- Legal and regulatory text classification.
-- Artificial intelligence in financial regulation.
-- Risk and compliance management.
-- Legal-domain language models.
-- Explainable classification of legal documents.
-- Processing and classification of long documents.
-- Semantic embeddings for text representation.
-- Automated regulatory and compliance analysis.
+- Legal-document classification.
+- Regulatory-text analysis.
+- Compliance monitoring.
+- Semantic document retrieval.
+- Classification of long legal documents.
+- Multilingual legal-topic classification.
+- Automated document review.
+- Analysis of regulatory and financial information.
 
-However, the identified studies mainly address international legal corpora, court decisions, contracts, European legislation, large-scale datasets, or advanced regulatory-analysis tasks.
+Nevertheless, most identified studies focus on international banking contexts, European regulation, court judgments, contracts, credit-risk applications, financial forecasting, responsible AI, or general compliance frameworks.
 
-Within the literature reviewed, no directly comparable study was identified that integrates all the following elements:
+Within the literature reviewed, no directly comparable study was identified that combines:
 
 - Peruvian regulatory and institutional PDF documents.
 - Binary relevance classification.
 - Spanish-language institutional content.
 - Multilingual semantic embeddings.
-- Fragmentation of long documents.
+- Fragmentation of long PDF documents.
 - Comparison of classical Machine Learning algorithms.
 - Preliminary filtering before detailed regulatory review.
-- PDF-quality controls and duplicate detection.
+- Explicit controls for extraction failures and duplicate documents.
 
 Therefore, this research addresses a contextual, methodological, and empirical gap through the design and evaluation of a reproducible regulatory-document classification artifact.
 
@@ -40,324 +40,321 @@ Therefore, this research addresses a contextual, methodological, and empirical g
 
 The literature review was guided by the following question:
 
-> What methods have been used to analyze and classify banking, legal, regulatory, risk-management, artificial-intelligence, and data-protection documents, and what limitations remain for their application to Peruvian regulatory PDF documents?
+> What methods have been used to analyze and classify banking, legal, regulatory, compliance, risk-management, and artificial-intelligence documents, and what limitations remain for their application to Peruvian regulatory PDF documents?
 
-The review also considered the following supporting questions:
+The following supporting questions were considered:
 
-1. What methods are currently used to represent and classify legal or regulatory documents?
-2. How have previous studies processed documents that exceed the input limits of conventional language models?
-3. Are there studies focused on Spanish-language or Latin American regulatory documents?
-4. Are classical Machine Learning models still useful when combined with pretrained semantic embeddings?
-5. What data-quality controls are reported before training document-classification models?
+1. What methods are used to represent and classify legal or regulatory documents?
+2. How are documents that exceed conventional transformer input limits processed?
+3. What evidence exists for Spanish-language or multilingual legal classification?
+4. Can classical Machine Learning models remain useful when combined with pretrained semantic embeddings?
+5. What data-quality controls are applied before training document-classification models?
+6. Is preliminary document-relevance filtering addressed before detailed compliance analysis?
 
 ---
 
 ## 3. Information Sources
 
-The literature search was conducted using the following academic information sources:
+The literature discovery process used:
 
-- **Scopus**, as a multidisciplinary abstract and citation database.
-- **PRIMO**, as the institutional academic discovery and research-assistant service.
+- **PRIMO**, the institutional academic-discovery service.
+- **Scopus**, a multidisciplinary abstract and citation database.
 
-Supporting methodological and technical publications were also reviewed from recognized academic repositories and publishers when they were directly relevant to:
+Supporting methodological studies were also consulted from recognized academic repositories and publisher records when they were directly relevant to:
 
-- PRISMA reporting.
-- Legal Natural Language Processing.
-- Sentence embeddings.
+- Semantic embeddings.
 - Legal-domain language models.
+- Multilingual legal classification.
 - Long-document classification.
-- Explainable legal-text classification.
+- Regulatory text analysis.
+- PRISMA reporting.
 
 ---
 
 ## 4. Search Strategy
 
-The search followed a progressive refinement strategy.
+A focused search strategy was applied to identify studies at the intersection of:
 
-Broad searches were initially performed to identify the general research landscape. The results were subsequently narrowed through:
-
-- Addition of specific concepts.
-- Publication-year restrictions.
-- Document-type filters.
-- Peer-review criteria.
-- Subject-area filters.
-- Exclusion of unrelated domains.
-- Title-and-abstract screening.
-- Full-text eligibility assessment.
-
----
-
-## 4.1 Scopus Search Refinement
-
-The Scopus search began with the broad concepts of banking regulation and regulatory frameworks. Risk compliance and artificial intelligence were then added to obtain studies closer to the proposed research.
-
-| Search ID | Search expression or focus | Applied filters | Results |
-|---|---|---|---:|
-| S1 | `TITLE-ABS-KEY(banking regulation AND framework)` | Publication year after 2021 | 891 |
-| S2 | `TITLE-ABS-KEY(banking regulation AND framework) AND TITLE-ABS-KEY(risk compliance)` | Publication year after 2021 | 90 |
-| S3 | `TITLE-ABS-KEY(banking regulation AND framework) AND TITLE-ABS-KEY(risk compliance) AND TITLE-ABS-KEY(artificial intelligence)` | Publication year after 2021 | 23 |
-| S4 | Same conceptual query as S3 | Books, book chapters, and articles in press excluded | 15 |
-
-The final Scopus search produced **15 potentially relevant records** for detailed assessment.
-
-### Final Scopus search logic
-
-```text
-TITLE-ABS-KEY(
-    banking regulation
-    AND framework
-)
-AND TITLE-ABS-KEY(
-    risk compliance
-)
-AND TITLE-ABS-KEY(
-    artificial intelligence
-)
-AND PUBYEAR > 2021
-AND NOT DOCTYPE("ch")
-AND NOT DOCTYPE("bk")
-AND NOT PUBSTAGE("aip")
-```
-
-The exact syntax may vary according to the Scopus interface, but the conceptual blocks were:
-
-1. Banking regulation and framework.
-2. Risk and compliance.
+1. Banking regulation.
+2. Compliance risk.
 3. Artificial intelligence.
-4. Publication date.
-5. Document-type restrictions.
+4. Machine Learning.
+
+The principal conceptual expression was:
+
+```text
+("banking regulation framework"
+AND "compliance risk"
+AND "artificial intelligence")
+AND "machine learning"
+```
+
+The same conceptual blocks were applied in PRIMO and Scopus, adapting the syntax to the search interface of each database.
+
+The query was intentionally specific because earlier broad searches returned a large number of unrelated studies concerning banking products, credit scoring, fraud detection, employee management, telecommunications, and general Artificial Intelligence applications.
 
 ---
 
-## 4.2 PRIMO Search Refinement
+## 4.1 PRIMO Search
 
-The initial PRIMO query combined concepts related to:
+### Search configuration
 
-- Banking regulatory frameworks.
-- Compliance-risk management.
-- Artificial intelligence.
-- Personal-data protection.
-- Regulatory monitoring.
-- Banking regulation.
-- Design Science.
-- Computer Science.
+The PRIMO advanced-search interface was configured as follows:
 
-The broad query produced **91,487 results**. The result set was progressively reduced using publication type, subject area, publication status, date, and domain exclusions.
+| Element | Configuration |
+|---|---|
+| Search scope | Search all |
+| First field | Any field |
+| First expression | `Banking regulation framework AND Compliance risk AND Artificial Intelligence` |
+| Boolean operator | AND |
+| Second field | Any field |
+| Second expression | `machine learning` |
+| Start date | 1 January 2021 |
+| End date | 31 December 2026 |
+| Material type | All items during initial retrieval |
+| Language | Not restricted during initial retrieval |
 
-| Screening criterion | Remaining records |
+### PRIMO result
+
+The focused PRIMO search returned:
+
+```text
+22 results
+```
+
+These 22 records constituted the PRIMO candidate set for subsequent title-and-abstract screening.
+
+### Interpretation
+
+The PRIMO results included studies related to:
+
+- Machine Learning and Artificial Intelligence in banking.
+- Automated credit assessment.
+- Responsible AI.
+- Financial-risk management.
+- Banking cybersecurity.
+- Data sovereignty.
+- Digital transformation.
+- Regulatory compliance.
+- Governance and financial decision-making.
+
+However, not every result was directly related to regulatory-document classification. Therefore, retrieval did not automatically imply inclusion in the final evidence synthesis.
+
+---
+
+## 4.2 Scopus Search
+
+### Search configuration
+
+The Scopus search used the following conceptual expression across article titles, abstracts, and keywords:
+
+```text
+Banking regulation framework
+AND risk compliance
+AND artificial intelligence
+AND machine learning
+```
+
+### Applied filters
+
+The documented search applied the following restrictions:
+
+| Filter | Value |
+|---|---|
+| Search fields | Article title, abstract, and keywords |
+| Document type | Article |
+| Publication period shown in the search | 2025–2026 |
+| Preprints | Not included in the 12-document result |
+| Language | English-language results were displayed |
+
+### Scopus result
+
+The focused Scopus search returned:
+
+```text
+12 documents
+```
+
+The results addressed subjects such as:
+
+- Artificial Intelligence systems in banking.
+- Responsible AI in finance.
+- Credit-scoring regulation.
+- European AI Act compliance.
+- Internal auditing of AI risk.
+- Personal-data protection in digital finance.
+- Data sovereignty.
+- Banking disclosure.
+- Islamic finance regulation.
+- Digital transformation and risk governance.
+
+### Interpretation
+
+The Scopus search produced a focused set of recent articles, but several studies dealt with AI governance, banking performance, credit scoring, disclosure, or financial risk rather than PDF-level regulatory-document classification.
+
+---
+
+## 4.3 Consolidated Search Results
+
+| Database | Search result |
 |---|---:|
-| Initial broad search | 91,487 |
-| Design Science included | 28,563 |
-| Articles and non-retracted documents | 18,309 |
-| Risk factors, compliance, design, and Computer Science | 7,390 |
-| Unrelated journal sources excluded | 7,296 |
-| Additional unrelated subject areas excluded | 7,217 |
-| Articles in review excluded | 733 |
-| Employee-related studies excluded | 695 |
-| Preprints excluded | 669 |
-| Telecommunications excluded | 602 |
-| Remaining articles in review excluded | 570 |
-| Publications from 2021–2026 | 315 |
-| Publications from 2022–2026 | 290 |
+| PRIMO | 22 |
+| Scopus | 12 |
+| Total records before duplicate checking | 34 |
 
-The refined PRIMO search produced **290 records** for title-and-abstract screening.
-
-### Recommended PRIMO search blocks
-
-Instead of relying on one excessively broad expression, the search was organized into complementary conceptual blocks.
-
-#### PRIMO Search P1: Regulatory-document classification
-
-```text
-("regulatory document classification"
-OR "legal document classification"
-OR "regulatory text classification")
-AND
-("machine learning"
-OR "natural language processing"
-OR embeddings)
-```
-
-#### PRIMO Search P2: Banking and regulatory compliance
-
-```text
-("banking regulation"
-OR "financial regulation"
-OR "regulatory compliance")
-AND
-("machine learning"
-OR "artificial intelligence"
-OR RegTech)
-```
-
-#### PRIMO Search P3: Risk management and artificial intelligence
-
-```text
-("compliance risk management"
-OR "regulatory risk"
-OR "AI risk management")
-AND
-(banking OR finance)
-```
-
-#### PRIMO Search P4: Data protection and financial services
-
-```text
-("personal data protection"
-OR "data privacy")
-AND
-(banking OR "financial systems")
-AND
-(regulation OR compliance)
-```
-
-#### PRIMO Search P5: Spanish and Latin American context
-
-```text
-("Spanish legal documents"
-OR "Latin American regulation"
-OR "Peruvian regulation")
-AND
-(classification
-OR "machine learning"
-OR embeddings)
-```
-
-These complementary searches reduced the risk of retrieving only generic studies about banking or artificial intelligence.
+The total of 34 represents the combined records returned by both searches before checking whether the same article appeared in both databases.
 
 ---
 
 ## 5. Search Terms
 
-### English search terms
+### Main English search terms
 
-The principal English-language terms were:
-
-- `"banking regulatory framework"`
+- `"banking regulation framework"`
 - `"banking regulation"`
 - `"financial regulation"`
+- `"compliance risk"`
 - `"risk compliance"`
-- `"regulatory risk"`
 - `"compliance risk management"`
-- `"regulatory monitoring"`
+- `"artificial intelligence"`
+- `"machine learning"`
 - `"regulatory document classification"`
 - `"legal document classification"`
-- `"long legal document classification"`
-- `"artificial intelligence"`
-- `"data protection"`
-- `"data privacy in banking"`
-- `"AI risk management"`
-- `"regulatory compliance banking"`
+- `"regulatory monitoring"`
 - `"RegTech"`
 - `"semantic embeddings"`
 - `"Sentence Transformers"`
 - `"Natural Language Processing"`
-- `"Machine Learning"`
-- `"Design Science"`
+- `"long document classification"`
 
-### Spanish search terms
+### Complementary terms
 
-Spanish-language variations included:
+- `"AI governance" AND banking`
+- `"responsible AI" AND finance`
+- `"regulatory compliance" AND NLP`
+- `"financial regulation" AND machine learning`
+- `"Spanish legal document classification"`
+- `"long legal document classification"`
+- `"data protection" AND banking regulation`
+- `"regulatory text classification"`
+
+### Spanish-language terms
 
 - `"marco regulatorio bancario"`
-- `"regulación financiera"`
+- `"riesgo de cumplimiento"`
 - `"gestión de riesgos de cumplimiento"`
-- `"riesgo regulatorio"`
-- `"monitoreo regulatorio"`
 - `"inteligencia artificial"`
-- `"protección de datos personales"`
-- `"cumplimiento normativo"`
-- `"clasificación de documentos jurídicos"`
-- `"clasificación de documentos regulatorios"`
-- `"procesamiento de lenguaje natural jurídico"`
-- `"documentos legales en español"`
 - `"aprendizaje automático"`
+- `"cumplimiento normativo"`
+- `"clasificación de documentos regulatorios"`
+- `"clasificación de documentos legales"`
+- `"protección de datos personales"`
+- `"documentos jurídicos en español"`
 
 ---
 
 ## 6. Inclusion Criteria
 
-A publication was considered eligible when it met the following criteria:
+A study was considered eligible when it met the following criteria:
 
-- Published between 2022 and 2026 for the main recent-literature screening.
-- Peer-reviewed journal article or conference paper.
-- Related to banking, financial regulation, compliance, risk management, regulatory monitoring, or legal-document analysis.
+- Journal article or conference paper.
+- Published between 2021 and 2026 for the principal search.
+- Related to banking, financial regulation, compliance, regulatory risk, or legal-document analysis.
 - Applied Artificial Intelligence, Natural Language Processing, Machine Learning, semantic embeddings, or transformer-based methods.
-- Examined legal, regulatory, financial, compliance, or institutional documents.
-- Included a methodology applicable or comparable to the proposed artifact.
+- Included sufficient methodological information.
+- Examined textual, legal, regulatory, financial, compliance, or institutional information.
 - Published in English or Spanish.
-- Available with sufficient bibliographic, abstract, or full-text information.
-- Relevant foundational studies published before 2022 were admitted when necessary to support the methodology, such as Sentence-BERT, LEGAL-BERT, Longformer, or long legal-document classification.
+- Relevant to at least one component of the proposed artifact:
+  - document classification;
+  - regulatory monitoring;
+  - legal-text representation;
+  - long-document processing;
+  - multilingual classification;
+  - preliminary document review.
+
+Foundational publications before 2021 were admitted when necessary to support the technical methodology, including Sentence-BERT, LEGAL-BERT, and long-document processing.
 
 ---
 
 ## 7. Exclusion Criteria
 
-Publications were excluded when they met one or more of the following conditions:
+A record was excluded when it met one or more of the following conditions:
 
-- Books or book chapters.
-- Retracted publications.
-- Articles in press without complete results.
-- Incomplete manuscripts.
-- Preprints without sufficient methodological information, except when used as relevant technical foundations.
-- Duplicate records retrieved from more than one source.
-- Studies unrelated to legal, banking, regulatory, risk, or compliance documents.
-- Studies focused exclusively on medicine, nutrition, telecommunications, or unrelated domains.
-- Employee-management studies without a regulatory-document component.
-- Publications without sufficient methodological information.
-- Studies that only mentioned banking or artificial intelligence superficially.
-- Research focused exclusively on fraud detection or transaction prediction without regulatory-document analysis.
-- Publications that did not describe a data-processing, classification, retrieval, or regulatory-analysis method.
+- No relationship with banking, regulation, compliance, legal documents, or institutional documents.
+- No Machine Learning, NLP, semantic-representation, or document-analysis method.
+- Exclusive focus on credit scoring, fraud detection, customer behavior, or financial forecasting without regulatory-document analysis.
+- Exclusive focus on banking performance without regulatory or compliance relevance.
+- Superficial mention of Artificial Intelligence or regulation.
+- Duplicate title or DOI.
+- Book, book chapter, editorial, or incomplete article-in-press record.
+- Insufficient abstract or methodological information.
+- Focus on unrelated domains.
+- No relevance to document classification, document review, regulatory monitoring, or compliance automation.
 
 ---
 
-## 8. Literature Screening Process
+## 8. Screening Procedure
 
-The retrieved records were reviewed through the following stages:
+The 34 retrieved records must be consolidated into a screening matrix.
 
-1. Identification of records from Scopus and PRIMO.
-2. Consolidation of the identified records.
-3. Review for duplicate titles or DOI values.
-4. Title-and-abstract screening.
-5. Exclusion of records unrelated to the research objective.
-6. Full-text retrieval of the retained studies.
-7. Full-text eligibility assessment.
-8. Selection of studies used to support the literature-gap analysis.
+The following information should be recorded for each result:
 
-The process is summarized using a PRISMA 2020-style flow diagram.
+| Field | Description |
+|---|---|
+| ID | Consecutive identifier |
+| Database | PRIMO or Scopus |
+| Title | Publication title |
+| Authors | Authors listed in the database |
+| Year | Publication year |
+| DOI | Digital Object Identifier |
+| Duplicate | Yes or No |
+| Title/abstract decision | Include, Exclude, or Uncertain |
+| Full text available | Yes or No |
+| Final decision | Include or Exclude |
+| Exclusion reason | Specific reason |
+
+The screening stages are:
+
+1. Combine the 22 PRIMO and 12 Scopus records.
+2. Identify duplicates using DOI and normalized title.
+3. Remove duplicate records.
+4. Screen the title and abstract of every unique record.
+5. Retrieve the full text of potentially eligible studies.
+6. Assess methodological and contextual relevance.
+7. Retain the studies used in the literature synthesis.
+8. Record one explicit reason for every excluded full-text study.
 
 ---
 
-## 9. PRISMA Flow Diagram
+## 9. PRISMA 2020 Flow Diagram
 
-A total of **305 records** were considered in the consolidated screening stage:
+At the identification stage, the verified counts are:
 
-- Scopus: 15 records.
-- PRIMO: 290 records.
+- PRIMO: 22.
+- Scopus: 12.
+- Total: 34.
 
-The PRIMO records represented the broader discovery set. After title-and-abstract screening, 290 records were excluded because they did not satisfy the complete combination of domain, methodological, and document-analysis criteria.
-
-The 15 Scopus records constituted the final set retained for detailed literature-gap analysis.
+The remaining values must be obtained from the screening matrix and must not be invented.
 
 ```mermaid
 flowchart TD
-    A["Records identified from databases<br/>Scopus: n = 15<br/>PRIMO: n = 290<br/>Total: n = 305"]
+    A["Records identified from databases<br/>PRIMO: n = 22<br/>Scopus: n = 12<br/>Total: n = 34"]
 
-    B["Records removed before screening<br/>Duplicate records removed: n = 0<br/>Records removed for other reasons: n = 0"]
+    B["Records removed before screening<br/>Duplicate records: n = TO COMPLETE<br/>Other removals: n = 0"]
 
-    C["Records screened by title and abstract<br/>n = 305"]
+    C["Unique records screened by title and abstract<br/>n = 34 − duplicates"]
 
-    D["Records excluded after title-and-abstract screening<br/>n = 290"]
+    D["Records excluded after title-and-abstract screening<br/>n = TO COMPLETE"]
 
-    E["Reports sought for full-text retrieval<br/>n = 15"]
+    E["Reports sought for full-text retrieval<br/>n = TO COMPLETE"]
 
-    F["Reports not retrieved<br/>n = 0"]
+    F["Reports not retrieved<br/>n = TO COMPLETE"]
 
-    G["Full-text reports assessed for eligibility<br/>n = 15"]
+    G["Full-text reports assessed for eligibility<br/>n = TO COMPLETE"]
 
-    H["Full-text reports excluded<br/>n = 0"]
+    H["Full-text reports excluded, with reasons<br/>n = TO COMPLETE"]
 
-    I["Studies included in the literature-gap analysis<br/>n = 15"]
+    I["Studies included in qualitative synthesis<br/>n = TO COMPLETE"]
 
     A --> B
     B --> C
@@ -373,286 +370,322 @@ flowchart TD
 
 | PRISMA stage | Number |
 |---|---:|
-| Records identified from Scopus | 15 |
-| Records identified from PRIMO | 290 |
-| Total records identified | 305 |
-| Duplicate records removed | 0 |
+| Records identified from PRIMO | 22 |
+| Records identified from Scopus | 12 |
+| Total records identified | 34 |
+| Duplicate records removed | To complete |
 | Records removed for other reasons before screening | 0 |
-| Records screened by title and abstract | 305 |
-| Records excluded by title and abstract | 290 |
-| Full texts sought | 15 |
-| Full texts not retrieved | 0 |
-| Full texts assessed for eligibility | 15 |
-| Full texts excluded | 0 |
-| Studies included in the literature-gap analysis | 15 |
+| Unique records screened by title and abstract | To complete |
+| Records excluded by title and abstract | To complete |
+| Reports sought for full-text retrieval | To complete |
+| Reports not retrieved | To complete |
+| Full-text reports assessed for eligibility | To complete |
+| Full-text reports excluded | To complete |
+| Studies included in qualitative synthesis | To complete |
 
-### Consistency verification
+### Consistency Rules
 
 ```text
-Records screened
-= Total records identified
-− Duplicate records
-− Other records removed
-
-Records screened
-= 305 − 0 − 0
-= 305
+Unique records screened
+= 34 − duplicate records
 ```
 
 ```text
-Reports sought for retrieval
-= Records screened
-− Records excluded after title-and-abstract screening
-
-Reports sought for retrieval
-= 305 − 290
-= 15
+Reports sought
+= unique records screened
+− records excluded by title and abstract
 ```
 
 ```text
-Full-text reports assessed
-= Reports sought
-− Reports not retrieved
-
-Full-text reports assessed
-= 15 − 0
-= 15
+Reports assessed
+= reports sought
+− reports not retrieved
 ```
 
 ```text
 Studies included
-= Full-text reports assessed
-− Full-text reports excluded
-
-Studies included
-= 15 − 0
-= 15
+= reports assessed
+− full-text reports excluded
 ```
 
-### Principal reasons for title-and-abstract exclusion
+---
 
-The 290 records excluded during title-and-abstract screening presented one or more of the following characteristics:
+## 10. Preliminary Analysis of the Search Results
 
-- Unrelated research domain.
-- No banking, financial, regulatory, legal, or compliance context.
-- No application of Machine Learning, NLP, semantic embeddings, or artificial intelligence.
-- No analysis of legal, regulatory, or institutional documents.
-- Exclusive focus on employee management, telecommunications, health, nutrition, or other unrelated areas.
-- Focus on banking transactions without regulatory-document analysis.
-- Superficial mention of banking regulation or artificial intelligence.
-- Lack of methodological relevance to the proposed artifact.
+The visible PRIMO and Scopus results show that the literature is concentrated in five broad areas.
+
+### 10.1 Artificial Intelligence in banking
+
+Several studies examine:
+
+- Banking automation.
+- AI-based decision-making.
+- Customer-finance applications.
+- Generative AI.
+- Banking performance.
+- Financial innovation.
+
+These studies provide industry context but do not necessarily analyze regulatory PDF documents.
+
+### 10.2 AI governance and regulatory compliance
+
+Some studies address:
+
+- European AI Act compliance.
+- Responsible AI.
+- Internal AI auditing.
+- Financial-sector oversight.
+- Regulatory and ethical AI risk.
+
+These studies are relevant to the regulatory context but mainly analyze governance requirements rather than document relevance classification.
+
+### 10.3 Risk management and financial stability
+
+The results include research concerning:
+
+- Credit-risk assessment.
+- Risk governance.
+- Systemic risk.
+- Financial stability.
+- Cybersecurity-risk assessment.
+
+These studies support the relevance of risk-management monitoring but often use structured financial data rather than regulatory text.
+
+### 10.4 Data protection and sovereignty
+
+Some results address:
+
+- Personal-data protection.
+- Data sovereignty.
+- Financial-system security.
+- Banking disclosures.
+
+These publications justify data protection as a regulatory-monitoring topic but do not implement the proposed PDF-classification pipeline.
+
+### 10.5 Digital transformation and banking innovation
+
+Several studies analyze:
+
+- FinTech.
+- Digital platforms.
+- Digital transformation.
+- AI-based banking products.
+- Technology-enabled financial services.
+
+These studies provide contextual support but are broader than preliminary regulatory-document filtering.
 
 ---
 
-## 10. Core Literature Supporting the Research Gap
+## 11. Methodological Literature Supporting the Artifact
 
-The following studies provide the strongest methodological and conceptual support for the proposed research. They complement the 15 records retained during the screening process.
+The database search was complemented with foundational and methodological studies directly related to the technical decisions of the project.
 
-| Study | Context and data | Methodological contribution | Relationship with this research | Remaining limitation |
-|---|---|---|---|---|
-| Reimers and Gurevych (2019) | General semantic-text tasks | Introduced Sentence-BERT for semantically meaningful sentence embeddings and cosine-based comparison | Supports the use of Sentence Transformers for representing document fragments | Not focused on regulatory or Peruvian documents |
-| Wan et al. (2019) | Long legal documents | Divided documents into segments and aggregated representations for document classification | Supports fragmentation and document-level embedding aggregation | Uses a different legal dataset and architecture |
-| Beltagy, Peters, and Cohan (2020) | Long textual documents | Proposed Longformer to process longer sequences using sparse attention | Demonstrates the input-length problem of conventional transformers | More computationally complex than the proposed prototype |
-| Chalkidis et al. (2020) | Legal corpora and downstream legal tasks | Developed LEGAL-BERT models adapted to legal-domain text | Demonstrates the value of domain-specific language representation | Primarily trained on English-language legal corpora |
-| Pappagari et al. (2019) | Long, domain-specific documents | Proposed hierarchical transformer approaches for long-document classification | Supports segment-level processing followed by document-level aggregation | Not focused on regulatory relevance filtering |
-| Park, Vyas, and Shah (2022) | Multiple long-document datasets | Compared transformer methods and simpler baselines | Supports comparing complex methods against strong classical baselines | Does not address Peruvian institutional documents |
-| Mamakas et al. (2022) | Long legal documents | Compared LegalBERT, Longformer, and alternative long-text representations | Supports the need to balance performance and computational cost | Focused on established legal benchmarks |
-| de Arriba-Pérez et al. (2022/2024) | Spanish legal judgments | Applied explainable multi-label Machine Learning to Spanish legal texts | Provides evidence that Spanish legal texts can be classified automatically | Focuses on judgments rather than regulatory PDFs |
-| González-González et al. (2024) | Spanish legal judgments | Combined NLP, tree estimators, and explainable decisions | Supports the comparison of interpretable classical ML methods | Addresses legal categories rather than binary regulatory relevance |
-| Han, Tsao, and Huang (2024) | Long documents from law and health | Proposed a length-aware transformer and analyzed variation in document length | Reinforces the difficulty of classifying documents of heterogeneous length | Requires a more complex architecture and larger benchmarks |
+| Study | Contribution | Relationship with this research | Limitation relative to this project |
+|---|---|---|---|
+| Reimers and Gurevych (2019) | Introduced Sentence-BERT for semantically meaningful sentence embeddings | Supports the semantic representation of document fragments | Not specific to regulatory documents |
+| Chalkidis et al. (2020) | Developed LEGAL-BERT for legal NLP tasks | Demonstrates the value of legal-domain language representation | Primarily English-language legal corpora |
+| Chalkidis et al. (2021) | Introduced MultiEURLEX with 65,000 EU laws in 23 languages | Demonstrates multilingual legal-document classification | European, large-scale, and multi-label context |
+| Mamakas et al. (2022) | Compared approaches for processing long legal documents | Supports fragmentation and long-document handling | Uses larger legal benchmarks and complex transformers |
+| Wan et al. (2019) | Studied classification of long legal documents through segmentation and aggregation | Supports obtaining a document representation from multiple segments | Different legal corpus and architecture |
+| de Arriba-Pérez et al. (2022) | Classified Spanish legal judgments using explainable Machine Learning | Demonstrates legal-text classification in Spanish | Court judgments rather than Peruvian regulation |
+| Park, Vyas, and Shah (2022) | Compared efficient approaches for long-document classification | Supports evaluating simpler baselines against complex methods | Not focused on regulatory monitoring |
+| Page et al. (2021) | Presented PRISMA 2020 reporting guidance | Supports transparent reporting of study identification and selection | Reporting guideline rather than classification method |
 
 ---
 
-## 11. Synthesis of the Reviewed Literature
+## 12. Literature Synthesis
 
-The reviewed studies demonstrate that legal and regulatory documents can be processed through NLP and Machine Learning techniques. They also show that document length, specialized vocabulary, explainability, language, and dataset size influence model performance.
+The reviewed literature supports the following observations.
 
-Several consistent observations emerge:
+### 12.1 Machine Learning is applicable to legal and regulatory text
 
-1. Legal and regulatory documents contain specialized terminology.
-2. Long documents frequently exceed the input length of conventional transformer models.
-3. Fragmentation and hierarchical aggregation are common strategies.
-4. Legal-domain pretrained models can improve specialized legal tasks.
-5. Complex architectures do not always outperform simpler baselines consistently.
-6. Spanish legal-document classification remains less represented than English-language legal NLP.
-7. Existing studies generally focus on judgments, contracts, legislation, or compliance requirements rather than preliminary document relevance.
-8. Limited evidence was identified for Peruvian regulatory-document classification.
+Previous research demonstrates that text-classification methods can be applied to:
 
-These observations support the use of:
+- Legislation.
+- Court judgments.
+- Legal provisions.
+- Contracts.
+- Regulatory clauses.
+- Compliance information.
+- Multilingual legal taxonomies.
 
-- Overlapping document chunks.
-- Multilingual semantic embeddings.
-- Document-level vector aggregation.
-- Classical Machine Learning models.
-- Multiple evaluation metrics.
-- Explicit data-quality controls.
+### 12.2 Legal and regulatory documents require specialized processing
+
+Legal and institutional texts frequently contain:
+
+- Specialized vocabulary.
+- Formal writing.
+- Cross-references.
+- Long sections.
+- Unequal document lengths.
+- Complex category structures.
+- Country-specific terminology.
+
+### 12.3 Long documents commonly require fragmentation or hierarchical processing
+
+Conventional transformer models process limited input lengths. Consequently, previous studies use:
+
+- Segmentation.
+- Sliding windows.
+- Hierarchical encoding.
+- Sparse-attention models.
+- Aggregation of segment representations.
+
+This supports the project’s decision to divide each PDF into overlapping chunks and aggregate their embeddings.
+
+### 12.4 Multilingual evidence exists, but Peru remains underrepresented
+
+Research such as MultiEURLEX demonstrates multilingual legal classification, and Spanish judgment-classification studies show that Spanish legal texts can be processed automatically.
+
+However, these studies do not evaluate:
+
+- Peruvian regulatory PDFs.
+- Binary relevance classification.
+- Documents from BCRP, SBS, or PCM.
+- A small institutional dataset with positive and negative classes.
+
+### 12.5 Most banking AI research does not classify regulatory documents
+
+The new PRIMO and Scopus results include many studies about AI in banking, credit risk, financial stability, governance, customer services, and digital transformation.
+
+This confirms that banking AI is an active research field. However, it also reveals that document-level relevance filtering remains less directly addressed.
 
 ---
 
-# 12. Identified Gaps
+# 13. Identified Gaps
 
 ## Gap 1: Limited Evidence in the Peruvian Regulatory Context
 
-The reviewed literature primarily examines financial, legal, and regulatory applications in international contexts.
+The reviewed literature primarily examines international banking, European legislation, financial markets, general compliance, court judgments, and multinational financial systems.
 
-The identified studies address:
-
-- European legislation.
-- International banking.
-- Spanish court judgments.
-- Contracts.
-- Emerging economies.
-- General legal corpora.
-- Responsible AI.
-- Cybersecurity.
-- Financial-risk frameworks.
-
-However, no directly comparable artifact was identified that had been trained and evaluated using PDF documents issued by Peruvian regulatory and institutional entities.
+No directly comparable study was identified that trained and evaluated a classification model using regulatory and institutional PDF documents issued in Peru.
 
 ### Significance
 
-International models may not directly represent:
+Models developed in other jurisdictions may not represent:
 
 - Peruvian regulatory terminology.
-- Spanish-language institutional expressions.
+- Spanish institutional expressions used in Peru.
+- BCRP payment-system terminology.
+- SBS risk-management terminology.
+- PCM digital-transformation terminology.
 - Local regulatory-document structures.
-- References to the Peruvian payment system.
-- Risk-management terminology used by the SBS.
-- Payment-system terminology used by the BCRP.
-- Digital-transformation terminology used by the PCM.
-- Institutional writing styles of Peruvian public authorities.
+- Institutional writing styles.
 
 ### How This Research Addresses the Gap
 
-The research constructs a specialized dataset using Peruvian institutional PDF documents related to:
+The study constructs a specialized dataset using Peruvian institutional PDFs associated with:
 
 - Payment systems.
 - Risk management.
 - Artificial intelligence.
-- Personal-data protection.
+- Data protection.
 - Digital transformation.
 
-The proposed artifact evaluates whether these documents can be automatically differentiated from non-relevant institutional documents.
+The artifact evaluates whether these documents can be distinguished from non-relevant institutional documents.
 
 ---
 
-## Gap 2: Limited Research on Preliminary Relevance Filtering
+## Gap 2: Limited Research on Preliminary Document-Relevance Filtering
 
-A significant part of the literature focuses on advanced activities such as:
+Much of the identified literature focuses on:
 
-- Regulatory-report generation.
-- Compliance interpretation.
-- Legal prediction.
+- Credit-risk prediction.
+- Customer behavior.
+- Financial performance.
+- AI governance.
+- Regulatory reporting.
 - Risk quantification.
-- Explainable AI.
-- Cybersecurity assessment.
-- Credit-scoring regulation.
-- Responsible-AI governance.
-- Obligation and requirement extraction.
+- Cybersecurity.
+- Compliance interpretation.
 
-These activities generally assume that the relevant legal or regulatory documents have already been identified.
-
-Less attention is given to the preliminary operational question:
-
-> Should a newly received document be reviewed in detail, or can it be excluded from the initial regulatory-monitoring process?
+These tasks generally assume that the relevant source documents have already been identified.
 
 ### Significance
 
-Before extracting obligations, deadlines, sanctions, responsible entities, or compliance requirements, institutions need to identify which documents deserve detailed human review.
+Before extracting obligations, deadlines, sanctions, or responsibilities, institutions must determine which documents deserve detailed analysis.
 
 Without preliminary filtering, organizations may experience:
 
 - Excessive manual workload.
-- Delayed regulatory analysis.
+- Delayed regulatory response.
 - Inconsistent prioritization.
-- Review of documents unrelated to the monitoring objective.
-- Greater risk of overlooking relevant regulatory information.
+- Review of unrelated documents.
+- Risk of overlooking relevant regulatory information.
 
 ### How This Research Addresses the Gap
 
-The proposed artifact performs binary document classification:
+The artifact performs binary classification:
 
 - `1`: Relevant.
 - `0`: Not relevant.
 
-It functions as an initial filtering mechanism before detailed legal, regulatory, or compliance analysis.
+It acts as a preliminary filter before detailed legal, regulatory, risk, or compliance review.
 
 ---
 
-## Gap 3: Limited Practical Approaches for Long Documents and Small Datasets
+## Gap 3: Limited Lightweight Approaches for Long Documents and Small Local Datasets
 
-Regulatory documents are often long and may exceed the input limits of conventional language models.
+Many legal NLP studies use:
 
-At the same time, specialized Peruvian regulatory datasets may initially contain relatively few manually labeled documents.
-
-Many published approaches rely on:
-
-- Large legal corpora.
-- Domain-specific transformer training.
+- Large benchmark datasets.
+- Domain-specific transformers.
 - Complex neural architectures.
 - Extensive computational resources.
-- Established benchmark datasets.
+
+A specialized Peruvian regulatory dataset may instead contain relatively few labeled documents with heterogeneous lengths.
 
 ### Significance
 
-These requirements may not be suitable for an initial institutional prototype characterized by:
-
-- A small labeled dataset.
-- Unequal quantities per topic.
-- Documents with heterogeneous lengths.
-- Limited computing resources.
-- No established Peruvian regulatory benchmark.
-- Need for simple reproduction in Google Colab.
+Training a large transformer from scratch may be unsuitable for an initial institutional prototype.
 
 ### How This Research Addresses the Gap
 
-The proposed framework applies the following lightweight and reproducible process:
+The proposed pipeline uses:
 
 1. PDF text extraction.
 2. Text validation and cleaning.
 3. Fragmentation into overlapping chunks.
-4. Multilingual semantic embedding generation.
-5. Average aggregation into one document vector.
-6. Classification using classical Machine Learning models.
+4. Pretrained multilingual embeddings.
+5. Mean aggregation into one vector per document.
+6. Classical supervised Machine Learning.
 
-The study compares:
+The compared models are:
 
 - Logistic Regression.
-- Linear Support Vector Machine.
+- Linear SVM.
 - Random Forest.
 
 ---
 
-## Gap 4: Insufficient Attention to PDF and Dataset Quality Controls
+## Gap 4: Insufficient Attention to PDF and Dataset Quality
 
-Document-classification research frequently emphasizes predictive performance, while practical data-quality issues may receive less explicit attention.
+Predictive studies frequently emphasize model performance while providing less detail about document-quality controls.
 
-These issues include:
+Relevant problems include:
 
-- PDF files without extractable text.
-- Scanned or image-based documents.
-- Text extraction failures.
-- Duplicate documents.
-- Documents with insufficient content.
+- PDFs without extractable text.
+- Scanned documents.
+- Extraction failures.
+- Duplicate files.
+- Insufficient textual content.
+- Data leakage.
 - Conflicting labels.
-- Information leakage between training and testing.
 
 ### Significance
 
-Data-quality problems can produce misleading evaluation results.
-
-For example, duplicate documents distributed between training and testing can artificially increase accuracy and other evaluation metrics.
+Invalid or duplicate documents can artificially improve model evaluation or make results unreliable.
 
 ### How This Research Addresses the Gap
 
 The project includes:
 
-- Primary PDF extraction using PyMuPDF.
-- Alternative extraction using `pypdf`.
-- Exclusion only after both extraction attempts fail.
-- Exact duplicate detection using SHA-256 text hashes.
-- Duplicate removal before dataset division.
-- Stratified train-test separation.
+- Primary extraction with PyMuPDF.
+- Alternative extraction with `pypdf`.
+- Exclusion only after both extraction methods fail.
+- Duplicate detection through SHA-256 text hashes.
+- Duplicate removal before train-test division.
+- Stratified splitting.
 - Verification that no document is shared between training and testing.
 - Validation of missing and infinite embedding values.
 
@@ -660,37 +693,28 @@ The project includes:
 
 ## Gap 5: Limited Comparison of Classical Models Using Multilingual Embeddings
 
-Recent research frequently emphasizes large transformer architectures and specialized legal-language models.
+Recent legal NLP research frequently emphasizes large transformer architectures.
 
-However, these methods may require:
+However, small specialized datasets may not justify:
 
-- Large labeled datasets.
+- Fine-tuning large models.
 - Extensive hyperparameter optimization.
-- Greater computing capacity.
-- Higher implementation complexity.
-- Longer training times.
-
-For a small specialized dataset, classical models combined with pretrained multilingual embeddings may provide a simpler and more reproducible alternative.
+- High computational costs.
+- Complex deployment requirements.
 
 ### Significance
 
-Complex models can:
-
-- Overfit small datasets.
-- Increase execution time.
-- Reduce reproducibility.
-- Be difficult to maintain.
-- Provide limited additional benefit over strong baselines.
+Classical Machine Learning models can provide strong, efficient, and reproducible baselines when combined with meaningful semantic embeddings.
 
 ### How This Research Addresses the Gap
 
-The research uses the same multilingual document embeddings to train and compare:
+The research compares:
 
 - Logistic Regression.
 - Linear SVM.
 - Random Forest.
 
-The evaluation includes:
+All models use the same multilingual document embeddings and are evaluated with:
 
 - Accuracy.
 - Precision.
@@ -701,143 +725,141 @@ The evaluation includes:
 
 ---
 
-# 13. Theoretical Gaps
+# 14. Theoretical Gaps
 
-The reviewed literature provides theoretical foundations in:
+The literature provides foundations in:
 
-- Legal Natural Language Processing.
+- Legal NLP.
 - Regulatory Technology.
-- Financial-compliance management.
-- Artificial-intelligence governance.
+- Banking AI.
+- Compliance-risk management.
 - Semantic text representation.
-- Legal-domain language modeling.
-- Automated document classification.
+- Legal-language models.
 - Long-document processing.
+- Automated document review.
 
-However, limited integration was identified between:
+However, limited integration was identified among:
 
 - Regulatory monitoring as an organizational process.
-- Preliminary relevance classification.
-- Semantic representation of long PDF documents.
-- Small Spanish-language institutional datasets.
-- Design Science as a framework for constructing and evaluating the artifact.
+- Preliminary document relevance.
+- Semantic representation of long institutional PDFs.
+- Small Spanish-language regulatory datasets.
+- Design Science as a framework for creating and evaluating the artifact.
 
-This research links these areas by treating the classification pipeline as a Design Science artifact intended to support regulatory-monitoring activities.
+This research connects these elements by treating the classification pipeline as a Design Science artifact supporting preliminary regulatory monitoring.
 
 ---
 
-# 14. Methodological Gaps
+# 15. Methodological Gaps
 
 The following methodological gaps were identified:
 
-- Limited use of reproducible pipelines for small Spanish-language regulatory datasets.
+- Limited reproducible pipelines for small Spanish-language regulatory datasets.
 - Limited comparison of classical classifiers using identical multilingual embeddings.
-- Insufficient documentation of PDF text-extraction failures.
+- Insufficient documentation of PDF-extraction failures.
 - Limited reporting of alternative extraction attempts.
-- Insufficient duplicate control before train-test separation.
-- Limited reporting of data-leakage verification.
-- Limited use of binary relevance classification as a preliminary regulatory-monitoring step.
-- Limited evaluation of lightweight solutions suitable for institutional prototypes.
-
-This research addresses these gaps through a documented and reproducible Google Colab pipeline.
+- Insufficient duplicate checking before train-test separation.
+- Limited verification of information leakage.
+- Limited use of binary relevance classification before advanced compliance analysis.
+- Limited lightweight solutions suitable for institutional prototypes.
 
 ---
 
-# 15. Empirical Gaps
+# 16. Empirical Gaps
 
 The reviewed literature provides limited empirical evidence involving:
 
 - Peruvian regulatory PDF documents.
-- Documents issued by the BCRP, SBS, PCM, and data-protection-related authorities.
-- Spanish-language documents concerning payment systems and risk management.
-- Small and specialized regulatory datasets.
-- Relevant and non-relevant institutional documents.
-- Hard-negative documents that contain related vocabulary but address a different principal topic.
-- Classification of external PDFs using models trained with Peruvian institutional documents.
-
-This research contributes initial empirical evidence through an organized and manually labeled dataset of Peruvian institutional PDF documents.
+- BCRP, SBS, PCM, and data-protection-related documents.
+- Spanish-language payment-system and risk-management texts.
+- Small specialized regulatory datasets.
+- Relevant and non-relevant institutional documents in one task.
+- Hard negatives containing related terms but addressing a different main subject.
+- External-PDF prediction using a model trained on Peruvian institutional documents.
 
 ---
 
-# 16. Contribution of This Research
+# 17. Contribution of This Research
 
 This research contributes:
 
-1. A specialized dataset of relevant and non-relevant institutional PDF documents.
-2. A documented process for PDF text extraction and validation.
-3. An alternative extraction attempt for documents without accessible text.
-4. A duplicate-detection mechanism based on SHA-256 document-content hashes.
-5. A fragmentation strategy for processing long PDF documents.
-6. Multilingual semantic embeddings for document representation.
-7. A comparison of three supervised Machine Learning models.
-8. Evaluation through multiple classification metrics.
-9. A functional process for classifying a previously unseen PDF.
-10. An initial artifact for supporting regulatory-document prioritization in Peru.
-11. A reproducible implementation using Google Colab and Google Drive.
+1. A specialized dataset of relevant and non-relevant institutional PDFs.
+2. A documented PDF-extraction and validation process.
+3. An alternative extraction attempt for inaccessible text.
+4. Duplicate detection using SHA-256 content hashes.
+5. A fragmentation strategy for long documents.
+6. Multilingual semantic embeddings.
+7. Comparison of three supervised Machine Learning models.
+8. Evaluation using multiple classification metrics.
+9. Classification of previously unseen PDFs.
+10. A reproducible Google Colab implementation.
+11. Initial empirical evidence for regulatory-document prioritization in Peru.
 
-The proposed artifact does not replace legal, regulatory, risk, or compliance specialists.
-
-Its purpose is to support the preliminary identification and prioritization of documents that may require detailed human review.
+The artifact does not replace legal, regulatory, risk, or compliance specialists. It supports the preliminary identification of documents requiring detailed human review.
 
 ---
 
-# 17. Limitations of the Literature Review
+# 18. Limitations of the Literature Review
 
-The literature review presents the following limitations:
+The review has the following limitations:
 
-- It used Scopus and PRIMO rather than every available academic database.
-- Some relevant studies may exist in local or non-indexed repositories.
-- Proprietary banking RegTech implementations may not be publicly documented.
-- Search-result counts may change when new publications are indexed.
-- Search expressions may produce different results depending on institutional database access.
-- The PRIMO result set was broad and required substantial title-and-abstract filtering.
-- The screening was conducted for an academic project and was not independently reviewed by a second researcher.
-- The absence of an identified study must not be interpreted as proof that no comparable implementation exists.
-- Some foundational studies were published before the recent-period filter but were included because of their methodological relevance.
-
-Therefore, the literature gap is stated only in relation to the publications reviewed and the search strategy applied in this study.
+- PRIMO and Scopus were the principal discovery databases.
+- The 34 identified records still require formal duplicate checking and screening documentation.
+- Some relevant publications may exist in local or non-indexed repositories.
+- Proprietary RegTech systems may not be publicly documented.
+- Search counts can change as databases are updated.
+- Scopus and PRIMO may index overlapping records.
+- The Scopus results were restricted to a very recent period.
+- The focused query may exclude useful studies that use different terminology.
+- Foundational methodological studies published before 2021 were necessary.
+- The absence of an identified Peruvian study does not prove that no similar system exists.
 
 ---
 
-# 18. Conclusion of the Gap Analysis
+# 19. Conclusion
 
-The literature demonstrates that Machine Learning, NLP, semantic embeddings, and transformer-based models can support legal and regulatory-document analysis.
+The updated searches confirm that Artificial Intelligence in banking, compliance, risk management, data protection, and financial governance is an active research area.
 
-Nevertheless, the reviewed studies do not fully address the combination of:
+Nevertheless, the retrieved studies mainly examine:
 
-- Peruvian regulatory documents.
-- Spanish-language institutional PDFs.
-- Preliminary binary relevance classification.
-- Small labeled datasets.
+- AI adoption.
+- Credit risk.
+- Financial performance.
+- Governance.
+- Cybersecurity.
+- Responsible AI.
+- Regulatory obligations.
+
+They do not fully address the proposed combination of:
+
+- Peruvian regulatory PDFs.
+- Binary relevance classification.
+- Spanish-language institutional documents.
 - Long-document fragmentation.
-- Multilingual embeddings.
+- Multilingual semantic embeddings.
 - Classical-model comparison.
-- Explicit PDF and dataset-quality controls.
+- Explicit document-quality controls.
 
-The proposed artifact responds to this gap by providing a practical and reproducible prototype for prioritizing documents before detailed regulatory review.
+The proposed artifact responds to this gap by providing a practical and reproducible prototype for prioritizing documents before detailed regulatory analysis.
 
 ---
 
-# 19. References
+# 20. References
 
 Beltagy, I., Peters, M. E., and Cohan, A. (2020). Longformer: The Long-Document Transformer. *arXiv preprint arXiv:2004.05150*.
 
-Chalkidis, I., Fergadiotis, M., Malakasiotis, P., Aletras, N., and Androutsopoulos, I. (2020). LEGAL-BERT: The Muppets straight out of Law School. *Findings of the Association for Computational Linguistics: EMNLP 2020*, 2898–2904.
+Chalkidis, I., Fergadiotis, M., Malakasiotis, P., Aletras, N., and Androutsopoulos, I. (2020). LEGAL-BERT: The Muppets straight out of Law School. *Findings of the Association for Computational Linguistics: EMNLP 2020*, 2898–2904. DOI: 10.18653/v1/2020.findings-emnlp.261.
 
-de Arriba-Pérez, F., García-Méndez, S., González-Castaño, F. J., and González-González, J. (2022). Explainable Machine Learning Multi-label Classification of Spanish Legal Judgements. *Journal of King Saud University – Computer and Information Sciences, 34*, 10180–10192.
+Chalkidis, I., Fergadiotis, M., and Androutsopoulos, I. (2021). MultiEURLEX: A Multi-lingual and Multi-label Legal Document Classification Dataset for Zero-shot Cross-lingual Transfer. *Proceedings of EMNLP 2021*, 6974–6996.
 
-González-González, J., de Arriba-Pérez, F., García-Méndez, S., Busto-Castiñeira, A., and González-Castaño, F. J. (2024). Automatic Explanation of the Classification of Spanish Legal Judgments in Jurisdiction-Dependent Law Categories with Tree Estimators. *arXiv preprint arXiv:2404.00437*.
+de Arriba-Pérez, F., García-Méndez, S., González-Castaño, F. J., and González-González, J. (2022). Explainable Machine Learning Multi-label Classification of Spanish Legal Judgements. *Journal of King Saud University – Computer and Information Sciences, 34*(10), 10180–10192.
 
-Han, G., Tsao, J., and Huang, X. (2024). Length-Aware Multi-Kernel Transformer for Long Document Classification. *arXiv preprint arXiv:2405.07052*.
-
-Mamakas, D., Tsotsi, E., Androutsopoulos, I., and Chalkidis, I. (2022). Processing Long Legal Documents with Pre-trained Transformers: Modding LegalBERT and Longformer. *arXiv preprint arXiv:2211.00974*.
+Mamakas, D., Tsotsi, P., Androutsopoulos, I., and Chalkidis, I. (2022). Processing Long Legal Documents with Pre-trained Transformers: Modding LegalBERT and Longformer. *Proceedings of the Natural Legal Language Processing Workshop 2022*, 130–142.
 
 Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., et al. (2021). The PRISMA 2020 Statement: An Updated Guideline for Reporting Systematic Reviews. *BMJ, 372*, n71.
 
-Pappagari, R., Zelasko, P., Villalba, J., Carmiel, Y., and Dehak, N. (2019). Hierarchical Transformers for Long Document Classification. *2019 IEEE Automatic Speech Recognition and Understanding Workshop*, 838–844.
-
 Park, H. H., Vyas, Y., and Shah, K. (2022). Efficient Classification of Long Documents Using Transformers. *arXiv preprint arXiv:2203.11258*.
 
-Reimers, N., and Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings Using Siamese BERT-Networks. *Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing*, 3982–3992.
+Reimers, N., and Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings Using Siamese BERT-Networks. *Proceedings of EMNLP-IJCNLP 2019*, 3982–3992. DOI: 10.18653/v1/D19-1410.
 
 Wan, L., Papageorgiou, G., Seddon, M., and Bernardoni, M. (2019). Long-length Legal Document Classification. *arXiv preprint arXiv:1912.06905*.
