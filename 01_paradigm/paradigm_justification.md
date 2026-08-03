@@ -1,6 +1,6 @@
 # Research Paradigm Justification
 
-Clasification of relevant banking regulatory documents for compliance risk in Payment System
+Classification of banking regulatory documents relevant to compliance risk in the payment system.
 
 **Session 1**
 ## Overview
