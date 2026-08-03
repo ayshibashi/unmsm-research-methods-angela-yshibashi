@@ -1,5 +1,7 @@
 # Research Paradigm Justification
 
+Clasification of relevant banking regulatory documents for compliance risk in Payment System
+
 **Session 1**
 ## Overview
 Given that the Banco Central de Reserva del Peru is about to launch Phase 4 of its Retail Payments Interoperability Strategy, inspired by India's UPI platform, which introduces a centralized payment initiation model, our interest has grown because strengthening and modernizing the country's National Payments System has also increased the need to control and  mitigate regulatory risk.
