@@ -1,14 +1,14 @@
 # Research Paradigm Justification
 
-Classification of banking regulatory documents relevant to compliance risk in the payment system.
+Selective collection of official banking regulatory documents relevant to controlling compliance risks in the payment system and related issues. 
 
 **Session 1**
 ## Overview
 Given that the Banco Central de Reserva del Peru is about to launch Phase 4 of its Retail Payments Interoperability Strategy, inspired by India's UPI platform, which introduces a centralized payment initiation model, our interest has grown because strengthening and modernizing the country's National Payments System has also increased the need to control and  mitigate regulatory risk.
 
-Design a machine learning framework to enables the rapid classification of Peruvian banking regulatory ecosystem regarding Payment System, including regulations from SBS Superintendencia de Banca y Seguros, BCRP Banco Central de Reserva del Peru, ANPDP Autoridad Nacional de Proteccion de Datos Personales and PCM Presidencia de Concejo de Ministros. This regulations encompass digital transformation, AI governance requirements, cyberdefense regulations, and the emerging regulatory landscape affecting banking institutions.
+Design a machine learning framework to enables the rapid classification of Official Peruvian banking regulatory ecosystem regarding Payment System, including regulations from SBS Superintendencia de Banca y Seguros, BCRP Banco Central de Reserva del Peru, ANPDP Autoridad Nacional de Proteccion de Datos Personales and PCM Presidencia de Concejo de Ministros. This regulations encompass digital transformation, AI governance requirements, cyberdefense regulations, and the emerging regulatory landscape affecting banking institutions.
 
-The key innovation lies in the fact that, instead of reading and reviewing all the regulations to determine their relevance, the model simply classifies them.
+The main innovation lies in the fact that, instead of reading and reviewing all regulations to determine their relevance, the model simply categorizes them.
 
 Paradigm Selected
 
@@ -18,9 +18,9 @@ Develop a continuous regulatory standards radar to detect, classify, and priorit
 
 ## Justification
 
-The question is: Can we build a system that ranks the relevance of X to avoid reviewing all regulations and determining their relevance? The model simply clasifies them.
+The question is: Can we build a system that ranks the relevance of X to avoid reviewing all regulations and determining their relevance? The model simply ranks them.
 
-The Peruvian banking sector faces numerous regulatory restrictions; our strategy focuses on just four key institutions to begin this study.
+The Peruvian banking sector faces numerous regulatory constraints; our strategy focuses on just four key institutions to begin this study.
 
 - Superintendencia de Banca, Seguros y AFP (SBS)
 - Banco Central de Reserva del Perú (BCRP)
