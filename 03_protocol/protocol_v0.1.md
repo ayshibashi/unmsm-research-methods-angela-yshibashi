@@ -4,7 +4,7 @@
 
 ## Overview
 
-*This continuous regulatory standards radar to detect, classify, and prioritize the regulatory obligations that banks must fulfill within the framework of the payment system starts by collecting all documents published by regulatory authorities on a daily basis from SBS, BCRP, ANPDP, PCM*
+*This continuous regulatory standards radar to detect and classify the regulatory obligations that banks must fulfill within the framework of the payment system starts by collecting all documents published by regulatory authorities on a daily basis from SBS, BCRP, ANPDP, PCM*
 
 
 ## Research Design
