@@ -51,8 +51,8 @@ We need to explore more rigorous procedures when the data is unbalanced i.e., wh
 
 ## Data Collection
 
-In Peru: You would need to automate the download of regulations from entities such as the SBS, BCRP, ANPDP and PCM as presented before. 
-Using Drive: While we can use Google Drive as an initial repository, that for training and production, we will need to process these files to extract the docuemnt regulation.
+In Peru: The download of regulations from entities such as the SBS, BCRP, ANPDP, and PCM, as described above, will need to be automated and stored in a manageable database. 
+Due to restrictions, meanwhile  we can use Google Drive as an initial repository, for training and production purposes, we will need to process these files to extract the regulatory document.
 
 
 ## Analysis Plan
