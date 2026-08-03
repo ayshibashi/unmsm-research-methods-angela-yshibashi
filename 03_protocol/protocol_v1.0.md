@@ -34,9 +34,9 @@ As the initial technique was void because of antibot, we switch to plan B with P
 
 ## Quality Assurance
 
-As we collect real regulations from the institutions, there is no manipulations or modifications
+When compiling official regulations from institutions, no manipulations or modifications were made. Therefore, some documents are not in PDF format but are images that, in this first version, were excluded from publication due to their small number.
 
 ## Changes from v0.1
   
-- -We narrowing or modifyng the project scope because in some cases we get an alternative data collection because we cannot select directly data.
+- We are reducing or modifying the scope of the project in this version because, due to time constraints, we are using an alternative manual data collection method since we cannot select data directly from official sites at this time.
 -
