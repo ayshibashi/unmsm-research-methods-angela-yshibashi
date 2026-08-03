@@ -18,7 +18,7 @@ At first tried with small datasets with basic and few regulations to test the mo
 
 ## Procedure
 
-We collect one by one the real regulations and laws from official web sites, revewig and coparing with the real ones.
+We collect one by one the real regulations and laws from official web sites, revewig and selecting with the real ones.
 
 ## Data Collection
 
