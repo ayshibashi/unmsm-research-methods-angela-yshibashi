@@ -29,12 +29,11 @@ This system cross-references all regulatory authorities and identifies regulator
 
 	Outputs:
 
-	Accuracy (indica el porcentaje total de documentos clasificados correctamente).
-	Precision (mide cuántos de los documentos clasificados como relevantes realmente eran relevantes)
-	Recall (indica cuántos de los documentos relevantes fueron detectados por el modelo).
-	F1-score (combina precision y recall en una sola medida. Es útil cuando se busca equilibrio entre ambos).
-	ROC-AUC (mide la capacidad del modelo para diferenciar entre documentos relevantes y no relevantes. Un valor cercano a 1 representa una excelente capacidad de separación).
-	 
+	Accuracy (indicates the total percentage of documents correctly classified).
+	Precision (measures how many of the documents classified as relevant were actually relevant).
+	Recall (indicates how many of the relevant documents were detected by the model).
+	F1-score (combines precision and recall into a single measure. It is useful when seeking a balance between the two).
+	ROC-AUC (measures the model's ability to differentiate between relevant and irrelevant documents. A value close to 1 represents 	excellent separation ability).
 	
 ## Participants/Data
 
@@ -46,7 +45,7 @@ If a site blocks access (as happened when testing BCRP and SBS), then decides to
 ## Procedure
 
 
-We need to look for higher procedures when the data is unbalanced (i.e., when there are thousands of irrelevant regulations and only a few important ones), which is the typical scenario in banking regulation where we focus on the Payments System to make it manageable.
+We need to explore more rigorous procedures when the data is unbalanced i.e., when there are thousands of irrelevant regulations and only a few important ones for our purposes, which is the typical scenario in banking regulation, where we focus on making the Payment System manageable.
 
 
 
@@ -58,19 +57,22 @@ Using Drive: While we can use Google Drive as an initial repository, that for tr
 
 ## Analysis Plan
 
-1. Machie larning prediction: Classifies relevance based on context
-2. Deterministic Rules: Searches for specific keywords or filters by desired or undesired regulators and document types. This is especially useful at the beginning of the project when we have fewer annotated samples to train the model.
+1. Machine learning prediction: Classifies relevance based on context.
 
-Challenges to Consider
+2. Deterministic rules: Searches for specific keywords or filters by desired or undesired regulations and document types. This is especially useful at the beginning of a project, when there are fewer annotated samples to train the model.
 
-The antibot protectioin some institutions rin.
+Challenges to consider
+
+The anti-bot protections that some public institution websites have.
 
 
 ## Ethical Considerations
 
-We tried to collect the data from SBS, BCRP, ANPDP, PCM wth requests because of speed, but the sites got blocked, antibot protection.
-Then we decide to use Playwright** (works real navegator)as a  plan B with some human delays in retrieval.
-Finally decided to narrow the projet scope and do it manually.
+We attempted to collect data from SBS, BCRP, ANPDP, and PCM using quick requests, but the sites were blocked by anti-bot protection.
+
+So we decided to use Playwright (which functions as a real browser) as a backup plan, although there were some delays in manual retrieval.
+
+Ultimately, we decided to scale back the project and do it manually to facilitate the initial implementation.
 
 ## Timeline
  
