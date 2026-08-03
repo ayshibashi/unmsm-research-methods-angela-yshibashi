@@ -51,9 +51,10 @@ Technical component
 | *Mixed method* | 5/5 | 5/5 | 3/5 | 3/5 | 5/5 | 21/25 |
 
 ## Rationale for Selected Method(s)
-How can we support the continuous monitoring of regulatory obligations related to Risk Management, Compliance, Artificial Intelligence Governance, and Personal Data Protection in the Peruvian banking sector?
 
-The study is grounded in the Scientific Design Research paradigm, given that its main contribution is the development of an evaluation artifact: a risk governance and regulatory compliance framework for AI in the Peruvian banking sector. This artifact integrates regulatory risk management, compliance obligations, new AI regulations, and personal data protection requirements.
+How can we support the continuous monitoring of regulatory obligations related to risk management, compliance, AI governance, and personal data protection in the Peruvian banking sector?
+
+The study is based on the scientific design research paradigm, given that its main contribution is the development of an assessment tool: a risk governance and regulatory compliance framework for AI in the Peruvian banking sector. This artifact integrates regulatory risk management, compliance obligations, new AI regulations, and personal data protection requirements.
 
 ## Constraints & Limitations
 
