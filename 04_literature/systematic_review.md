@@ -49,67 +49,8 @@ The review also evaluates whether existing literature addresses:
 
 # 3. Research Questions Informing the Review
 
-## RQ1: Document-classification methods
-
-> What Machine Learning and Natural Language Processing methods have been used to classify legal, banking, regulatory, or compliance-related documents?
-
-This question examines:
-
-- Traditional Machine Learning.
-- Transformer models.
-- Legal-domain language models.
-- Semantic embeddings.
-- Multi-label and binary classification.
-- Explainable classification methods.
-
----
-
-## RQ2: Long-document processing
-
-> How have previous studies processed legal or regulatory documents whose length exceeds the input limits of conventional language models?
-
-This question examines:
-
-- Document segmentation.
-- Sliding windows.
-- Overlapping chunks.
-- Hierarchical architectures.
-- Sparse-attention transformers.
-- Embedding aggregation.
-- Document-level vector construction.
-
----
-
-## RQ3: Regulatory relevance filtering
-
-> To what extent has previous research addressed preliminary relevance classification before detailed legal or compliance analysis?
-
-This question distinguishes between:
-
-- Initial document filtering.
-- Legal-topic classification.
-- Obligation extraction.
-- Compliance-rule interpretation.
-- Regulatory reporting.
-- Risk quantification.
-
----
-
-## RQ4: Language and geographical context
-
-> What evidence exists for Spanish-language, Latin American, or Peruvian legal and regulatory document classification?
-
-This question evaluates:
-
-- Spanish legal-document datasets.
-- Multilingual legal benchmarks.
-- Latin American applications.
-- Peruvian institutional documents.
-- Country-specific legal terminology.
-
----
-
-## RQ5: Small datasets and model complexity
+--
+ Small datasets and model complexity
 
 > What methods are suitable for specialized regulatory-document classification when only a relatively small labeled dataset is available?
 
@@ -122,22 +63,6 @@ This question considers:
 - Overfitting risks.
 - Reproducibility.
 - Computational cost.
-
----
-
-## RQ6: Data-quality controls
-
-> What document and dataset quality controls are reported before legal or regulatory classification models are trained?
-
-This question examines:
-
-- PDF extraction failures.
-- Documents without extractable text.
-- Duplicate records.
-- Label quality.
-- Insufficient textual content.
-- Train-test leakage.
-- Missing or invalid numerical values.
 
 ---
 
