@@ -4,13 +4,13 @@
 
 ## 1. Overview
 
-The literature review examined previous research related to banking regulation, compliance-risk management, artificial intelligence, Regulatory framework, long-document processing, and Machine Learning-based document classification.
+The literature review examined previous research related to document processing, and Machine Learning-based document classification.banking regulation, compliance-risk management, artificial intelligence, Regulatory framework.
 
-The purpose of the review was to determine whether previous studies had developed an artifact directly comparable to the proposed research: a Machine Learning framework capable of classifying Peruvian regulatory and institutional PDF documents as relevant or not relevant for preliminary regulatory monitoring.
+The purpose of the review was to determine whether previous studies had developed an artifact directly comparable to the proposed research: a Machine Learning framework capable of classifying Peruvian regulatory and institutional PDF documents as relevant or not relevant for preliminary regulatory monitoring and then continue with second part design and implementation.
 
 The reviewed literature demonstrates that Artificial Intelligence can support:
 
-- Legal-document classification.
+- Regulatory-document classification.
 - Regulatory-text analysis.
 - Compliance monitoring.
 - Classification of long legal documents.
