@@ -94,27 +94,6 @@ The principal databases used were:
 - **PRIMO**, the institutional academic-discovery service.
 - **Scopus**, a multidisciplinary abstract and citation database.
 
-Complementary methodological studies were consulted through:
-
-- ACL Anthology.
-- arXiv.
-- ScienceDirect.
-- Journal and publisher websites.
-- Official PRISMA resources.
-- DOI and bibliographic metadata services.
-
-The complementary sources were used to verify:
-
-- Publication title.
-- Authors.
-- Publication year.
-- Venue.
-- Methodology.
-- Dataset.
-- Main findings.
-- Relationship with the proposed research.
-
----
 
 # 6. Search Period
 
