@@ -48,5 +48,9 @@ This creates:
 
 ## References
 
+de Azevedo, R. F., Muniz, T. H. E., Pimentel, C., Macedo, B. C., de Lima Vasconcelos, D., et al. (2024). BBRC: Brazilian Banking Regulation Corpora. In *Proceedings of the Joint Workshop of the 7th Financial Technology and Natural Language Processing, the 5th Knowledge Discovery from Unstructured Data in Financial Services, and the 4th Economics and Natural Language Processing Workshop at LREC-COLING 2024*.
+
+de Azevedo, R. F., Silva, T. N., Augusto, H. T. B. V., Reis, P. O. S., Chaves, I. B., et al. (2022). Banking regulation classification in Portuguese. In *Computational Processing of the Portuguese Language: 15th International Conference, PROPOR 2022* (pp. 137–147). Springer. https://doi.org/10.1007/978-3-030-98305-5_13
+
 
 
