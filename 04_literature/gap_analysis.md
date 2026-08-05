@@ -191,3 +191,30 @@ The studies on banking regulation in Brazil and Portuguese-language regulatory c
 - Detection and removal of duplicate documents.
 
 Therefore, the selected studies provide methodological and contextual background, while the application to the Peruvian regulatory environment represents the specific contribution of this research.
+
+## References
+
+Bura, C., Jonnalagadda, A. K., Naayini, P., Kamatala, S., & Myakala, P. K. (2025). Role of AI in enterprise content management: Foundations and current state. In *2025 Global Conference in Emerging Technology (GINOTECH)*. IEEE. https://doi.org/10.1109/GINOTECH63460.2025.11076659
+
+de Azevedo, R. F., Muniz, T. H. E., Pimentel, C., Macedo, B. C., de Lima Vasconcelos, D., et al. (2024). BBRC: Brazilian Banking Regulation Corpora. In *Proceedings of the Joint Workshop of the 7th Financial Technology and Natural Language Processing, the 5th Knowledge Discovery from Unstructured Data in Financial Services, and the 4th Economics and Natural Language Processing Workshop at LREC-COLING 2024*.
+
+de Azevedo, R. F., Silva, T. N., Augusto, H. T. B. V., Reis, P. O. S., Chaves, I. B., et al. (2022). Banking regulation classification in Portuguese. In *Computational Processing of the Portuguese Language: 15th International Conference, PROPOR 2022* (pp. 137–147). Springer. https://doi.org/10.1007/978-3-030-98305-5_13
+
+Dogra, V., Verma, S., Kavita, Chatterjee, P., Shafi, J., Choi, J., & Ijaz, M. F. (2022). A complete process of text classification system using state-of-the-art NLP models. *Computational Intelligence and Neuroscience, 2022*, Article 1883698. https://doi.org/10.1155/2022/1883698
+
+García-Méndez, S., Fernández-Gavilanes, M., Juncal-Martínez, J., González-Castaño, F. J., & Seara, O. B. (2020). Identifying banking transaction descriptions via support vector machine short-text classification based on a specialized labelled corpus. *IEEE Access, 8*, 61642–61655. https://doi.org/10.1109/ACCESS.2020.2983584
+
+Gupta, A., Rawte, V., & Zaki, M. J. (2024). Predicting firm financial performance from SEC filing changes using automatically generated dictionary. *Computational Economics, 64*(1), 307–334. https://doi.org/10.1007/s10614-023-10443-x
+
+McCarthy, S., & Alaghband, G. (2026). Cross-document emotion consistency (CDEC): A feature family framework for financial disclosure risk screening. *Journal of Risk and Financial Management, 19*(4), Article 251. https://doi.org/10.3390/jrfm19040251
+
+Schellnack-Kelly, I. (2025). Transforming records management in South Africa: The role of AI in dynamic file plan development. *New Review of Information Networking, 30*(2), 227–256. https://doi.org/10.1080/13614576.2025.2570662
+
+Singh, R., Sharma, V., Kashyap, R., & Manwal, M. (2024). Automated multi-page document classification and information extraction for insurance applications using deep learning techniques. In *2024 11th International Conference on Reliability, Infocom Technologies and Optimization: Trends and Future Directions (ICRITO)* (pp. 1–7). IEEE. https://doi.org/10.1109/ICRITO61523.2024.10522111
+
+Sukanya, G., & Priyadarshini, J. (2024). Analysis on word embedding and classifier models in legal analytics. *AIP Conference Proceedings, 2802*(1), Article 140001. https://doi.org/10.1063/5.0181820
+
+Ta, D. T., Ben Saad, W., & Oh, J. Y. (2023). Specialized text classification: An approach to classifying Open Banking transactions. In *2023 IEEE 18th International Conference on Computer Science and Information Technologies (CSIT)* (pp. 1–4). IEEE. https://doi.org/10.1109/CSIT61576.2023.10324203
+
+Yang, H., Nawi, H. S. A., & Zhang, Y. (2025). Artificial intelligence and large language models in government document management: A systematic review of applications, challenges, and implementation strategies. *Journal of Logistics, Informatics and Service Science, 12*(4), 129–145. https://doi.org/10.33168/JLISS.2025.0408
+
