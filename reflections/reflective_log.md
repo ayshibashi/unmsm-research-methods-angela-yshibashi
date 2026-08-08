@@ -19,11 +19,11 @@ At the beginning, I expected to develop a design science project. Nevertheless, 
 
 I therefore had to refresh my knowledge of basic machine learning models, as well as the types of cases in which they can be applied. In doing so, I realized that many underlying concepts remain the same, even if the tools have changed. For example, principles such as pagination in data processes or the well-known idea of “garbage in, garbage out” are still highly relevant: if the input data are incomplete, inconsistent, or poorly structured, the results of any model will also be weak. Based on that process, I decided to work with a simple classification model and its corresponding pipeline, allowing me to complete the project in a structured way and obtain interpretable results.
 
-From this Unit I realizaed that choosing a research method is not only a formal academic requirement, but also a practical decision that defines the quality and feasibility of the entire project. I understood that a research question must be aligned with the available data, the methodological approach, and the level of technical capacity required to implement the study. This was especially relevant for me because I wanted my project to be useful for risk management, but also realistic according to my current learning stage.
+I realize that choosing a research method is not only a formal academic requirement, but also a practical decision that defines the quality and feasibility of the entire project. I understood that a research question must be aligned with the available data, the methodological approach, and the level of technical capacity required to implement the study. This was especially relevant for me because I wanted my project to be useful for risk management, but also realistic according to my current learning stage.
 
 It also helped me recognize that research in artificial intelligence cannot be reduced only to the use of algorithms or technical models. Before applying any model, it is necessary to understand the problem, define the objective, evaluate the assumptions, and consider the limitations of the data. In this sense, the course encouraged me to think more critically about the relationship between scientific rigor and practical application.
 
-From a professional perspective, this was particularly valuable because emerging technologies introduce new operational, ethical, model, and governance risks. Therefore, the first unit helped me connect academic research methods with my daily work: risk assessment requires evidence, structure, traceability, and a clear explanation of the criteria used to make decisions.
+From a professional perspective, this was particularly valuable because emerging technologies introduce new operational, ethical, model, and governance risks. Therefore, these lectures helped me connect academic research methods with my daily work: risk assessment requires evidence, structure, traceability, and a clear explanation of the criteria used to make decisions.
 
 ---
 
@@ -60,19 +60,33 @@ From a risk management perspective, I found this unit especially useful because 
 
 Overall, this Unit reinforced the idea that responsible AI begins before the model is trained. It starts with the way data are obtained, cleaned, protected, interpreted, and documented. This learning was valuable for my project because it encouraged me to be more careful with the sources of information, the treatment of personal data, and the methodological explanation of each step in the analytical process.
 
+### Session 3:
+
+Although I did not review other protocols in depth, I recognize the importance of rigorous machine learning procedures, including the standard division of data into training, validation, and testing sets, such as the 80/10/10 approach. In the next version of my project, I expect to incorporate more advanced methods, including MiniBERT, and to strengthen the methodological structure of the analysis.
+
+This final part helped me understand that the methodological structure of a machine learning project is as important as the model itself. Dividing the data into training, validation, and testing sets is not just a technical convention; it is a way to reduce the risk of overfitting and to evaluate whether the model can generalize to new information. Without this separation, a model may appear to perform well, but only because it has learned the specific characteristics of the available dataset rather than the underlying pattern.
+
+I also learned that validation is essential for making responsible decisions about model selection. It is not enough to choose the model with the best metric in a single run. The evaluation process should consider whether the metric is appropriate for the problem, whether the classes are balanced, whether errors have different consequences, and whether the model’s behavior can be explained. These aspects are especially relevant in risk-related contexts, where false positives and false negatives may have very different implications.
+
+The discussion about more advanced methods, such as MiniBERT, also showed me that natural language processing can provide valuable tools for analyzing qualitative or textual information. In my professional field, many risk signals are not always structured as numerical data; they may appear in reports, regulations, audit observations, contracts, emails, or public information. For that reason, incorporating NLP methods in a future version of the project could help extract patterns, classify relevant information, and support more systematic risk analysis.
+
+At the same time, this discussion reminded me that using more advanced models also requires stronger methodological controls. A complex model is not necessarily better if it is not aligned with the research question, if its results are difficult to interpret, or if the available data are not sufficient to train or validate it properly. Therefore, my next step should not only be to apply more sophisticated techniques, but to ensure that each technique is justified, documented, and evaluated according to the purpose of the study.
 
 ## Major Insights
 
-*[What have been the biggest takeaways from this course?]*
+Overall, this course has been a meaningful opportunity to reconnect with academic research from a more current and applied perspective. It helped me update my understanding of artificial intelligence, not only as a set of technical tools, but as a field that requires scientific rigor, methodological transparency, ethical awareness, and responsible governance. 
+
+Throughout the project, I realized that the quality of an AI-based analysis depends not only on the model selected, but also on the clarity of the research question, the quality and treatment of the data, the reproducibility of the process, and the ability to explain and justify each methodological decision.
 
 ## Challenges Encountered
 
-*[What has been challenging about the learning process?]*
+Although this first version of the project was intentionally simple, it represents an important step in my learning process. It helped me move from uncertainty to a clearer understanding of how research methods, scientific integrity, reproducibility, and responsible AI are connected. Going forward, I expect to continue strengthening the project by incorporating more advanced techniques, improving the methodological design, and deepening the link between academic research and practical risk management. In that sense, this reflective log also represents a commitment to keep learning, updating my knowledge, and applying these concepts with responsibility and professional judgment.
 
 ## Growth Areas
 
-*[In what areas have you grown as a researcher?]*
+As mentioned before from professional perspective, this knew knowledge is particularly valuable because emerging technologies introduce new operational, ethical, model, and governance risks. 
+Now I can connect academic research methods with my daily work: risk assessment requires evidence, structure, traceability, and a clear explanation of the criteria used to make decisions.
 
 ## Next Steps
+From my professional experience in risk management, these lectures are especially relevant. Emerging technologies create new opportunities, but they also introduce risks related to data quality, model reliability, operational resilience, personal data protection, accountability, and decision-making. For this reason, I believe that the knowledge gained in this course will allow me to contribute with a more informed, critical, and structured perspective when evaluating the use of AI and analytical models in institutional contexts.
 
-*[What will you focus on going forward?]*
